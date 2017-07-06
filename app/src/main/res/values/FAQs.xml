@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="FAQs_title">FREQUENTLY ASKED QUESTIONS</string>
+
+    <string name="FAQs_quest1">Q. Do I have to subscribe for using your application?</string>
+    <string name="FAQs_ans1">No. It is our pleasure to have you in the GMP Network. You will need to complete a simple sign up to post a question in the forum. It is not required to sign up for searching GMP terms or description. However, in order to access to our full version of GMP documents user needs to subscribe from the application.</string>
+
+    <string name="FAQs_quest2">Q. How can I subscribe?</string>
+    <string name="FAQs_ans2">You can start subscription by clicking the “Subscribe” button of the application. You can sign up either as Guest or Monthly member directly on a monthly subscription. Fill up the short Sign Up registration form and choose our Monthly options. Sign up as guest does not provide full access of documents.</string>
+
+    <string name="FAQs_quest3">Q. How can I cancel my subscription?</string>
+    <string name="FAQs_ans3">We can cancel your subscription upon your notification. We will cancel it for you without any further charge, no question asked.</string>
+
+    <string name="FAQs_quest4">Q. What do I get from subscription?</string>
+    <string name="FAQs_ans4">GMP Network mobile application is free to download. While you can use the application Free, some areas are restricted to members only (after subscription). Once yoursubscription will be successful you will gain access to full version of all GMP documents published in the application.</string>
+
+    <string name="FAQs_quest5">Q. Does subscription provide downloading or purchasing documents?</string>
+    <string name="FAQs_ans5">Subscription to our “GMP Network Library” provide read only access to full length of documents, access to gmp forum, post a gmp related question and get answered by the experts in community. If you would require to purchase a document please contact us through the application. We will be in touch within as shortly as possible. </string>
+
+    <string name="FAQs_quest6">Q. How does subscription fee works?</string>
+    <string name="FAQs_ans6">You may choose to start the subscription with a flat payment of $4.49which will be charged each month as long as the subscription will be kept. </string>
+
+    <string name="FAQs_quest7">Q. Where can I open the documents?</string>
+    <string name="FAQs_ans7">Documents can be opened directly into your mobile application.Open documents straight into your mobile phones anywhere and anytime with an internet connection. Can be viewed online using built in web browser or in a pdf reader application.</string>
+
+    <string name="FAQs_quest8">Q. Can I use the same subscription for my PC or Laptop?</string>
+    <string name="FAQs_ans8">The subscription for mobile application only works in the mobile devices. It cannot be used for accessing documents other than a mobile phone.</string>
+
+    <string name="FAQs_quest9">Q.  How can I purchase documents?</string>
+    <string name="FAQs_ans9">If you would require to purchase a document please contact us through the application. We will be in touch within as shortly as possible.</string>
+
+    <string name="FAQs_quest10">Q. I have question which I could not find in your discussion forum?</string>
+    <string name="FAQs_ans10">You can use our GMP Discussion Forum free after a simple ‘Guest’ sign up. The discussion forum is an internal network between the users which is growing every day. If you can’t find an information, please post a question. The forum member will be able to answer your question in their time.If you have a general question about our procedures, subscription, payments or any technical problems, you can contact us through the application. We will respond to your query as soon as possible.</string>
+
+</resources>

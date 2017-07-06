@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#02569c</color>
+    <color name="colorPrimaryDark">#02569c</color>
+    <color name="colorPrimaryLight">#80abcd</color>
+    <color name="colorPrimaryLight2">#bfe2ff</color>
+    <color name="colorPrimaryLightOpacity">#239bff</color>
+    <color name="colorAccent">#02569c</color>
+    <color name="white">@android:color/white</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="input_field_background">#55afafaf</color>
+    <color name="hint_text_color">#969696</color>
+    <color name="sloganColorBlack">@android:color/black</color>
+    <color name="blackOpacity">#99000000</color>
+    <color name="facebookLoginButton">#395ba2</color>
+    <color name="custom_yellow">#f0a82b</color>
+    <color name="custom_green">#1bbc9b</color>
+    <color name="custom_purple">#9a59b5</color>
+</resources>

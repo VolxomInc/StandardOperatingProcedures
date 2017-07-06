@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="splashLogo_height">135dp</dimen>
+    <dimen name="splashLogo_width">120dp</dimen>
+    <dimen name="loginLogo_height">115dp</dimen>
+    <dimen name="loginLogo_width">100dp</dimen>
+    <dimen name="login_inputField_layout_width">260dp</dimen>
+    <dimen name="loginEmailIdImage_width_height">20dp</dimen>
+    <dimen name="dashboardImageFrame_width_height">90dp</dimen>
+    <dimen name="aboutUsImageFrame_width_height">125dp</dimen>
+    <dimen name="dashboardGridCell_width">100dp</dimen>
+    <dimen name="aboutUsGridCell_width">135dp</dimen>
+    <dimen name="listViewFolderImageView">50dp</dimen>
+    <dimen name="dialogTextWidth">300dp</dimen>
+
+</resources>

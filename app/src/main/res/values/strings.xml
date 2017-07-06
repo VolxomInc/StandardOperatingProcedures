@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">GMP Network</string>
+    <string name="facebook_app_id">1456546981081937</string>
+    <string name="fb_login_protocol_scheme">fb1456546981081937</string>
+    <string name="sloganText">Building Network on Good\n Manufacturing Practice</string>
+    <string name="sloganImageDescription">Slogan logo</string>
+    <string name="gridLayoutImageViewDescription">ContentImage</string>
+
+    <string name="login_hintEmailId">Email ID</string>
+    <string name="login_hintPassword">Password</string>
+    <string name="login_forgotPassword">Forgot Password?</string>
+    <string name="login_button">Login</string>
+    <string name="login_orView">Or</string>
+    <string name="login_haveAccount">Don\'t have an account?</string>
+    <string name="login_getA">Get a </string>
+    <string name="login_twoWeekFreeTrail"> Two Week Free Trail </string>
+    <string name="login_trailNow"> Now</string>
+    <string name="login_createAccount">Create Account</string>
+
+
+    <string name="signUp_hintFirstLastName">First and Last Name</string>
+    <string name="signUp_hintUserName">UserName</string>
+    <string name="signUp_hintStreetAddress">Street Address</string>
+    <string name="signUp_hintCity">City</string>
+    <string name="signUp_hintState">State</string>
+    <string name="signUp_hintZipCode">Zip Code</string>
+    <string name="signUp_hintEmailAddress">Email Address</string>
+    <string name="signUp_hintPassword">Password</string>
+    <string name="signUp_hintConfirmPassword">Confirm Password</string>
+    <string name="signUp_ButtonText">Sign Up</string>
+    <string name="signUp_ButtonImage">Sign Up Image</string>
+    <string name="signUp_agreementText">By clicking Sign Up you are agreeing to the</string>
+
+
+    <string name="dashboard_askGMP">Ask a\nGMP Term</string>
+    <string name="dashboard_searchGMP">Search a\nGMP Term</string>
+    <string name="dashboard_discussForum">GMP Discussion\n Forum</string>
+    <string name="dashboard_sampleDocument">Sample\nDocuments</string>
+    <string name="dashboard_accessToSOPLibrary">Access to GMP\nSOP Library</string>
+    <string name="dashboard_socialNetworkSetting">Social Network\nSettings</string>
+    <string name="dashboard_overView">Overview</string>
+    <string name="dashboard_notifications">Notifications</string>
+    <string name="dashboard_FAQs">FAQs</string>
+    <string name="dashboard_aboutUs">About Us</string>
+    <string name="dashboard_contactUs">Contact Us</string>
+    <string name="dashboard_Logout">Logout</string>
+
+
+    <string name="aboutUsSloganText">GMP SOP providing pre-written\n standard operating
+        procedures,practicals\n manuals,guidance,forms and templates in the\n area of
+        cGMP,GLP,Quality and Regulatory\n compliance. Tap below for an overview.
+    </string>
+    <string name="about_us_analytical_microBiology_lab">Analytical &amp; MicroBiology Lab (GLP)</string>
+    <string name="about_us_gmp_process_cleaning_method_validation">GMP Process Cleaning Method Validation</string>
+    <string name="about_us_gmp_quality_management_system">GMP Quality Management System</string>
+    <string name="about_us_sterile_non_sterile_manufacturing_operation">Sterile\/Non Sterile Manufacturing Operation</string>
+    <string name="about_us_gmp_standard_operating_procedures_for_pharmaceuticals">GMP Standard Operating Procedures for Pharmaceuticals</string>
+    <string name="about_us_get_your_membership_now">Get Your Membership Now</string>
+    <string name="about_us_members_benefit">Member\'s Benefits</string>
+    <string name="about_us_view_pricing">View Pricing</string>
+
+    <string name="list_view_folder_Place">Title</string>
+    <string name="list_view_folder_content_des">Folder or File Image</string>
+    <string name="list_view_folder_expanding">Expanding Image</string>
+
+    <string name="errorLoading">Error Loading</string>
+    <string name="noInternetConnection">No Internet Connection</string>
+    <string name="loading">Please wait while Loading</string>
+
+    <string name="dialogSubscription_sampleDocument">Sample Documents</string>
+    <string name="dialogSubscription_title">Please subscribe to access GMP-SOP library.</string>
+    <string name="dialogLogin_title">Please login to access GMP-SOP library.</string>
+    <string name="dialogSubscription_description">The library has hundreds of SOPs Manuals, Guidance, Forms and Templates written by area experts with remarkable expertise in cGMP. All our document are regularly updated and compliant to code of cGMP guidelines. Tap on below options to View Sample Documents.</string>
+
+
+    <string name="search_gmp_hint">Search</string>
+    <string name="search_gmp_searchResult">Search Result</string>
+    <string name="search_gmp_Definitions">Definition</string>
+    <string name="search_gmp_RegulatoryReference">Regulatory Reference</string>
+    <string name="search_gmp_gMPLibrary">GMP-SOP Library</string>
+    <string name="search_gmp_file_not_found">No file found</string>
+    <string name="search_gmp_definition_not_found">No Definition found</string>
+    <string name="search_gmp_definition_files_not_found">No Definition or File found\nPlease Enter GMP Term to Search</string>
+    <string name="search_gmp_publishOutWeb">Publish Out in the web</string>
+    <string name="search_gmp_onStartMessage">Please Enter GMP Term to Search</string>
+    <string name="search_gmp_sampleDefinition">The app will speak out the Definition(I will Provide the Content) for the user as well as show the content on the screen. The user can mute the speak if does not like to be listened.</string>
+
+
+    <string name="ask_gmp_text">Press the button and Ask a GMP Term\n or go back to Search GMP Term</string>
+
+    <string name="forgot_password_enterEmail">Please Enter your Email Address</string>
+    <string name="forgot_password_ButtonSendText">Send</string>
+
+
+    <string name="search_option_recommendation">We will show you the result you\n want to see</string>
+    <string name="search_option_voice">Voice</string>
+    <string name="search_option_Search">Search</string>
+    <string name="search_option_Search_hint">Search a GMP term by typing</string>
+    <string name="search_option_voice_hint">Ask a GMP term by saying any word</string>
+
+    <!--<string name="discussion_forum_information">After posting your question, we will ask you to sign in to your existing account, or register new account. then your question will be published.</string>
+    <string name="discussion_forum_question">Question : </string>-->
+    <string name="discussion_forum_slogan">Where GMP Experts comes together\n to help finding a solution.</string>
+    <string name="discussion_forum_search_hint">Does your question exist? Search here...</string>
+    <string name="discussion_forum_post_question">Post a Question!</string>
+    <string name="discussion_forum_search">Search</string>
+    <string name="discussion_forum_popular_recent_quest">Popular recent Questions!</string>
+    <string name="discussion_forum_comments">Comments</string>
+    <string name="discussion_forum_comment_hint">Post your answer</string>
+
+    <string name="post_question_slogan">After posting your question, we will ask you\n to sign in to your existing account, or register\n a new account. Then, your question will be\n published</string>
+    <string name="post_question_label">Question:*</string>
+    <string name="post_question_tags_label">Tags:*</string>
+    <string name="post_question_title_hint">Enter title/subject of your Question..</string>
+    <string name="post_question_tags_hint">Enter atleast two(2) tags related to question..</string>
+    <string name="post_question_detail_brief_hint">Enter detail brief of your Question</string>
+    <string name="post_question_go">Post</string>
+    <string name="post_question_login">Login to Post</string>
+    <string name="post_question_create_account">Create Account</string>
+    <string name="post_comment">Post Comment</string>
+    <string name="discussion_forum_question">sample question</string>
+    <string name="submit">Submit</string>
+</resources>

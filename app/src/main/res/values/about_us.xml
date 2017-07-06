@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="aboutUs_title">ABOUT US</string>
+
+    <string name="aboutUs_quest1">What is GMP-SOP Application?</string>
+    <string name="aboutUs_ans1">The objective of GMP-SOP application is to build a network of experts in Good Manufacturing Practice (GMP) for pharmaceutical compliance. What had started in 2004 as a simple forum between a few experienced GMP professionals and consultants, today we have compiled all of their discussion in the easy formats of standard procedures, forms, handy GMP manuals and template which can be readily accessible through this application. This mobile application brings us one step closer to our audience who are directly or indirectly involved in pharmaceuticals manufacturing and compliance industry.</string>
+
+
+    <string name="aboutUs_quest2">What do we offer?</string>
+    <string name="aboutUs_ans2">Step by step pre-written standard operating procedures, forms, templates and manuals in the area of GMP (Good Manufacturing Practice), GLP, Production Operations, Quality Assurance Management, Quality Control and Microbiology Laboratory Management, Process - cleaning and methodology Validation, Regulatory auditing. The documents are created specially to cater small and medium size pharmaceutical manufacturing businesses.
+        \n\nAll manuals and procedures are written by area experts in practical example formats in order to comply with local cGMP, GLP, GDP, GAMP and international regulatory agency\'s requirements. Our goal is to provide a complete GMP and GLP models with a set of ready procedures and manuals which are easy to understand and readily applicable. All procedures are written with practical instructions and examples. Forms and templates are referenced in the SOPs where applicable. Procedures and manuals are grouped into categories found in a typical GMP environment and documents are prepared to guide you through establishing a regulatory compliant facility.
+        \n\nContent of our procedures are not only guidelines but detail know how instructions which will help you to build up your systems from scratch.
+    </string>
+
+
+    <string name="aboutUs_quest3">Member’s Benefit:</string>
+    <string name="aboutUs_ans3">
+        -	Hundreds of SOPs, Manuals and Guidance on critical GMP topics written by experts in cGMP.
+    \n\n-	Unlimited access to all published GMP documents (member’s only). Topics include QA and Compliance, Microbiology and Chemistry laboratory, Manufacturing operation, Process and Cleaning validation and more
+    \n\n-	Detail examples and practical instructions which won’t be found anywhere else
+    \n\n-	Practical solutions which can be readily applicable to any small and medium size GMP environment
+    \n\n-	Instant delivery of purchased documents bought from the store which can be shared to many other devices as you like.
+    \n\n-	Open documents straight into your mobile phones anywhere and anytime with an internet connection. Can be viewed online using built in web browser or in a pdf reader application.
+    \n\n-	12,000 plus members have subscribed over the years
+    </string>
+
+</resources>

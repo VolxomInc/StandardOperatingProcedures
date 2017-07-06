@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.gmpsop.standardoperatingprocedures.Activities.SearchGMP">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/search_gmp_aboveLayout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/shape_rectangle_input_field_stroke"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:padding="5dp"
+                android:src="@drawable/search_gmp" />
+
+            <com.gmpsop.standardoperatingprocedures.CustomViews.MyEditText
+                android:id="@+id/search_gmp_editText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:background="@color/transparent"
+                android:hint="@string/search_gmp_hint"
+                android:inputType="textAutoComplete|textAutoCorrect"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/hint_text_color"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/search_gmp_goButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:padding="5dp"
+                android:src="@drawable/search_gmp_go" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/search_gmp_aboveLayout"
+            android:orientation="vertical">
+
+            <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/search_gmp_searchResult"
+                android:textColor="@color/sloganColorBlack"
+                android:textSize="16sp" />
+
+
+            <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextViewBold
+                android:id="@+id/search_gmp_onStartMessage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="@string/search_gmp_onStartMessage"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/search_gmp_errorLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/search_gmp_errorImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/error_icon" />
+
+                <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView
+                    android:id="@+id/search_gmp_errorMsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/errorLoading"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/search_gmp_resultLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/custom_yellow"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/search_gmp_definitionButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="30dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextViewBold
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.92"
+                            android:text="@string/search_gmp_Definitions"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/search_gmp_definitionFlag"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.08"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/search_maximize" />
+
+
+                    </LinearLayout>
+
+                    <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView
+                        android:id="@+id/search_gmp_termDefinition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:text="@string/search_gmp_sampleDefinition"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                    <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextViewBold
+                        android:id="@+id/search_gmp_definition_zero"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_weight="0.92"
+                        android:text="@string/search_gmp_definition_not_found"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/custom_green"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/search_gmp_regulatoryReferenceButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="30dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextViewBold
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.92"
+                            android:text="@string/search_gmp_RegulatoryReference"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/search_gmp_regulatoryReferenceFlag"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.08"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/search_maximize" />
+                    </LinearLayout>
+
+                    <ListView
+                        android:id="@+id/search_gmp_termRegulatoryReference"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:visibility="gone" />
+
+                    <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextViewBold
+                        android:id="@+id/search_gmp_regulatory_zero"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_weight="0.92"
+                        android:text="@string/search_gmp_file_not_found"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/custom_purple"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/search_gmp_gmpLibraryButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="30dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextViewBold
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.92"
+                            android:text="@string/search_gmp_gMPLibrary"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/search_gmp_gmpLibraryFlag"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.08"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/search_maximize" />
+
+                    </LinearLayout>
+
+
+                    <ListView
+                        android:id="@+id/search_gmp_termGmpLibrary"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:visibility="gone" />
+
+                    <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextViewBold
+                        android:id="@+id/search_gmp_library_zero"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_weight="0.92"
+                        android:text="@string/search_gmp_file_not_found"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <ListView
+            android:id="@+id/search_gmp_suggestionList"
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:background="@color/white"
+            android:divider="@null"
+            android:visibility="gone"
+            android:layout_below="@id/search_gmp_aboveLayout"/>
+
+    </RelativeLayout>
+</ScrollView>
