@@ -226,4 +226,10 @@ public class DiscussionForumQuestion extends Activity implements View.OnClickLis
         });
         AppController.getInstance().addToRequestQueue(jsonRequest, tag_string_req);
     }
+
+    @Override
+    protected void onResume() {
+        myAdapter.notifyDataSetChanged();
+        super.onResume();
+    }
 }
