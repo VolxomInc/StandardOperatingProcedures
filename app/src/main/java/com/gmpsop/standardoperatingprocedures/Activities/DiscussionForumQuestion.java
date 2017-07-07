@@ -2,11 +2,13 @@ package com.gmpsop.standardoperatingprocedures.Activities;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -48,6 +50,9 @@ public class DiscussionForumQuestion extends Activity implements View.OnClickLis
     private SessionManager session;
     private ProgressDialog pDialog;
 
+    LinearLayout loginCreateAcc, logoutPost;
+    RelativeLayout loginButton, createAccountButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,6 +68,14 @@ public class DiscussionForumQuestion extends Activity implements View.OnClickLis
     public void init_components() {
 
         session = new SessionManager(getApplicationContext());
+
+        //copied from post - ignore naming
+        loginCreateAcc = (LinearLayout) findViewById(R.id.post_question_loginSignUpLayout);
+        logoutPost = (LinearLayout) findViewById(R.id.post_question_logoutLayout);
+        loginButton = (RelativeLayout) findViewById(R.id.post_question_LoginButton);
+        loginButton.setOnClickListener(this);
+        createAccountButton = (RelativeLayout) findViewById(R.id.post_question_SignUpButton);
+        createAccountButton.setOnClickListener(this);
 
         noCommentsTextView = (TextView) findViewById(R.id.no_comments);
         noCommentsTextView.setVisibility(GONE);
@@ -115,6 +128,22 @@ public class DiscussionForumQuestion extends Activity implements View.OnClickLis
                 } else {
                     MyToast.showLong(getApplicationContext(), "You need to be logged in to comment");
                 }
+                break;
+            case R.id.post_question_LoginButton:
+                if (!session.isLoggedIn()) {
+                    Intent loginIntent = new Intent(this,
+                            Login.class);
+                    loginIntent.putExtra(Constants.INTENT_LOGIN_FROM, Constants.LOGIN_FROM_POST_QUESTION);
+                    startActivity(loginIntent);
+                } else {
+                    //session.setLogin(false);
+                    MyToast.showShort(this, "You are already loggedIn");
+                }
+                break;
+            case R.id.post_question_SignUpButton:
+                Intent signUpIntent = new Intent(this,
+                        SignUpMembers.class);
+                startActivity(signUpIntent);
                 break;
         }
     }
@@ -239,6 +268,15 @@ public class DiscussionForumQuestion extends Activity implements View.OnClickLis
 
     @Override
     protected void onResume() {
+
+        if (session.isLoggedIn()) {
+            logoutPost.setVisibility(View.VISIBLE);
+            loginCreateAcc.setVisibility(GONE);
+        } else {
+            logoutPost.setVisibility(GONE);
+            loginCreateAcc.setVisibility(View.VISIBLE);
+        }
+
         myAdapter.notifyDataSetChanged();
         super.onResume();
     }

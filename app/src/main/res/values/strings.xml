@@ -116,7 +116,9 @@
     <string name="post_question_tags_hint">Enter atleast two(2) tags related to question..</string>
     <string name="post_question_detail_brief_hint">Enter detail brief of your Question</string>
     <string name="post_question_go">Post</string>
+    <string name="post_comment_go">Comment</string>
     <string name="post_question_login">Login to Post</string>
+    <string name="post_comment_login">Login to Comment</string>
     <string name="post_question_create_account">Create Account</string>
     <string name="post_comment">Post Comment</string>
     <string name="discussion_forum_question">sample question</string>

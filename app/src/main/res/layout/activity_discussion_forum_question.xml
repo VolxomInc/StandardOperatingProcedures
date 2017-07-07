@@ -135,6 +135,7 @@
         android:visibility="gone"
         android:layout_gravity="start"
         android:text="@string/discussion_forum_no_comments"
+        android:layout_margin="10dp"
         android:textColor="@android:color/black"
         android:textSize="16sp" />
 
@@ -210,35 +211,132 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/post_question_loginSignUpLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:id="@+id/post_question_LoginButton"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.4"
+            android:background="@drawable/shape_rectangle_button"
+            android:gravity="center">
+
+            <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView
+                android:id="@+id/post_question_LoginButtonText"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/loginEmailIdImage_width_height"
+                android:layout_gravity="center"
+                android:text="@string/post_comment_login"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.2"
+            android:gravity="center">
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/post_question_SignUpButton"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.4"
+            android:background="@drawable/shape_rectangle_button"
+            android:gravity="center">
+
+            <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView
+                android:id="@+id/post_question_SignUpButtonText"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/loginEmailIdImage_width_height"
+                android:layout_gravity="center"
+                android:text="@string/post_question_create_account"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/post_question_logoutLayout"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:gravity="end"
-        android:orientation="horizontal"
-        android:weightSum="10">
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:id="@+id/post_question_LogoutButton"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.4"
+            android:gravity="center">
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.2"
+            android:gravity="center" />
 
         <RelativeLayout
             android:id="@+id/discussion_forum_post_comment_button"
             android:layout_width="0dp"
             android:layout_height="30dp"
-            android:layout_weight="3.4"
+            android:layout_weight="1.4"
             android:background="@drawable/shape_rectangle_button"
             android:gravity="center">
 
             <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView
-
+                android:id="@+id/post_question_buttonText"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:singleLine="true"
-                android:text="@string/submit"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="16sp" />
+                android:layout_height="@dimen/loginEmailIdImage_width_height"
+                android:layout_gravity="center"
+                android:text="@string/post_comment_go"
+                android:textColor="@color/white" />
 
         </RelativeLayout>
 
     </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:gravity="end"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:weightSum="10">-->
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/discussion_forum_post_comment_button"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_weight="3.4"-->
+            <!--android:background="@drawable/shape_rectangle_button"-->
+            <!--android:gravity="center">-->
+
+            <!--<com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView-->
+
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:singleLine="true"-->
+                <!--android:text="@string/submit"-->
+                <!--android:textAlignment="center"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="16sp" />-->
+
+        <!--</RelativeLayout>-->
+
+    <!--</LinearLayout>-->
 
 </LinearLayout>

@@ -66,34 +66,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <file leaf-file-name="activity_discussion_forum_question.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_discussion_forum_question.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="109" column="46" selection-start-line="109" selection-start-column="18" selection-end-line="109" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DiscussionForumQuestion.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Activities/DiscussionForumQuestion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="140" column="0" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+            <state relative-caret-position="158">
+              <caret line="134" column="33" selection-start-line="134" selection-start-column="33" selection-end-line="134" selection-end-column="33" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#9147#9186#0" expanded="true" />
+                <element signature="e#9264#9292#0" expanded="true" />
+                <element signature="e#10120#10159#0" expanded="true" />
+                <element signature="e#10237#10275#0" expanded="true" />
+                <element signature="e#11599#11638#0" expanded="true" />
+                <element signature="e#11716#11741#0" expanded="true" />
+                <marker date="1499434026115" expanded="false" signature="12780:12796" ph="&quot;Submit&quot;" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_post_question.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_post_question.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="93" column="27" selection-start-line="63" selection-start-column="12" selection-end-line="93" selection-end-column="27" />
-              <folding />
             </state>
           </provider>
           <provider editor-type-id="android-designer2">
@@ -101,11 +87,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Helper/Constants.java">
+      <file leaf-file-name="DiscussionForumQuestion.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Activities/DiscussionForumQuestion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="25" column="45" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="45" />
+            <state relative-caret-position="128">
+              <caret line="77" column="27" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PostQuestion.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Activities/PostQuestion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="129">
+              <caret line="78" column="30" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -2752,7 +2750,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47258064" sideWeight="0.5060048" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31391585" sideWeight="0.4939952" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2810248" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2810248" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32741934" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -3238,14 +3236,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_discussion_forum_question.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_post_question.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="137" column="48" selection-start-line="137" selection-start-column="48" selection-end-line="137" selection-end-column="48" />
-          <folding>
-            <element signature="e#5240#5278#0" expanded="true" />
-            <element signature="e#7972#8011#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="203">
+          <caret line="254" column="27" selection-start-line="158" selection-start-column="12" selection-end-line="254" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
@@ -3254,42 +3249,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="109" column="46" selection-start-line="109" selection-start-column="18" selection-end-line="109" selection-end-column="46" />
+        <state relative-caret-position="185">
+          <caret line="118" column="33" selection-start-line="118" selection-start-column="18" selection-end-line="118" selection-end-column="33" />
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_post_question.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="93" column="27" selection-start-line="63" selection-start-column="12" selection-end-line="93" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Activities/PostQuestion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="80" column="17" selection-start-line="80" selection-start-column="12" selection-end-line="80" selection-end-column="17" />
-          <folding>
-            <element signature="e#6912#7815#0" expanded="true" />
-            <element signature="e#7814#7815#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="129">
+          <caret line="78" column="30" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Activities/DiscussionForumQuestion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="140" column="0" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+        <state relative-caret-position="128">
+          <caret line="77" column="27" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_discussion_forum_question.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="134" column="33" selection-start-line="134" selection-start-column="33" selection-end-line="134" selection-end-column="33" />
+          <folding>
+            <element signature="e#9147#9186#0" expanded="true" />
+            <element signature="e#9264#9292#0" expanded="true" />
+            <element signature="e#10120#10159#0" expanded="true" />
+            <element signature="e#10237#10275#0" expanded="true" />
+            <element signature="e#11599#11638#0" expanded="true" />
+            <element signature="e#11716#11741#0" expanded="true" />
+            <marker date="1499434026115" expanded="false" signature="12780:12796" ph="&quot;Submit&quot;" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
   </component>
