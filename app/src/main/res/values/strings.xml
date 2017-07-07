@@ -107,6 +107,7 @@
     <string name="discussion_forum_popular_recent_quest">Popular recent Questions!</string>
     <string name="discussion_forum_comments">Comments</string>
     <string name="discussion_forum_comment_hint">Post your answer</string>
+    <string name="discussion_forum_no_comments">There are no comments at the moment.</string>
 
     <string name="post_question_slogan">After posting your question, we will ask you\n to sign in to your existing account, or register\n a new account. Then, your question will be\n published</string>
     <string name="post_question_label">Question:*</string>

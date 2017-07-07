@@ -128,6 +128,15 @@
         android:textColor="@color/colorPrimary"
         android:textSize="16sp" />
 
+    <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView
+        android:id="@+id/no_comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="start"
+        android:text="@string/discussion_forum_no_comments"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
 
     <ListView
         android:id="@+id/discussion_forum_questions_list"
@@ -146,26 +155,59 @@
         android:orientation="horizontal"
         android:weightSum="10">
 
-        <RelativeLayout
-            android:id="@+id/discussion_forum_search_button"
-            android:layout_width="0dp"
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/discussion_forum_search_button"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="10"-->
+            <!--android:background="@drawable/shape_rectangle_button_background2"-->
+            <!--android:gravity="center">-->
+
+            <!--<com.gmpsop.standardoperatingprocedures.CustomViews.MyEditText-->
+                <!--android:id="@+id/discussion_forum_comment"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:minLines="3"-->
+                <!--android:hint="@string/discussion_forum_comment_hint"-->
+                <!--android:textAlignment="textStart"-->
+                <!--android:gravity="start"-->
+                <!--android:textColor="@color/colorPrimary"-->
+                <!--android:textSize="16sp" />-->
+
+<!--</RelativeLayout>-->
+
+        <LinearLayout
+            android:id="@+id/post_question_detailLayout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="10"
+            android:layout_margin="5dp"
             android:background="@drawable/shape_rectangle_button_background2"
-            android:gravity="center">
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="0.05"
+                android:background="@color/transparent" />
 
             <com.gmpsop.standardoperatingprocedures.CustomViews.MyEditText
                 android:id="@+id/discussion_forum_comment"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:minLines="3"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.9"
+                android:background="@color/transparent"
+                android:gravity="top|left"
                 android:hint="@string/discussion_forum_comment_hint"
-                android:textAlignment="textStart"
-                android:gravity="start"
+                android:lines="5"
+                android:textAlignment="gravity"
                 android:textColor="@color/colorPrimary"
-                android:textSize="16sp" />
+                android:textColorHint="@color/hint_text_color"
+                android:textSize="14sp"
+                tools:ignore="RtlCompat" />
+        </LinearLayout>
 
-</RelativeLayout>
     </LinearLayout>
 
 

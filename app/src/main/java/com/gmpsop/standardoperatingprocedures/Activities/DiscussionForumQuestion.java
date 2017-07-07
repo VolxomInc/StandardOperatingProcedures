@@ -30,11 +30,13 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+import static android.view.View.GONE;
 import static com.gmpsop.standardoperatingprocedures.AppController.TAG;
 
 public class DiscussionForumQuestion extends Activity implements View.OnClickListener{
 
-    TextView questionTextView, questionAnswerCountTextView, questionViewCountTextView, questionTagsTextView;
+    TextView questionTextView, questionAnswerCountTextView, questionViewCountTextView,
+            questionTagsTextView, noCommentsTextView;
     EditText commentEditText;
 //    EditText searchQuestion;
     RelativeLayout postComment, search;
@@ -61,6 +63,9 @@ public class DiscussionForumQuestion extends Activity implements View.OnClickLis
     public void init_components() {
 
         session = new SessionManager(getApplicationContext());
+
+        noCommentsTextView = (TextView) findViewById(R.id.no_comments);
+        noCommentsTextView.setVisibility(GONE);
 
         questionTextView = (TextView) findViewById(R.id.discussion_forum_question);
         questionTextView.setText(question.getQuestion());
@@ -144,6 +149,9 @@ public class DiscussionForumQuestion extends Activity implements View.OnClickLis
                             );
                         }
 
+                        noCommentsTextView.setVisibility(View.GONE);
+                        commentsListView.setVisibility(View.VISIBLE);
+
                         myAdapter.notifyDataSetChanged();
 
 
@@ -152,6 +160,8 @@ public class DiscussionForumQuestion extends Activity implements View.OnClickLis
                                 "Error pulling comments or no comments");
                         Log.e(TAG, "Error while pulling comments");
 
+                        noCommentsTextView.setVisibility(View.VISIBLE);
+                        commentsListView.setVisibility(GONE);
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
