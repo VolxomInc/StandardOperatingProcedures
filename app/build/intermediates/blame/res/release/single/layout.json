@@ -1,0 +1,302 @@
+[
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_expanded_menu_layout.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_term_and_conditions.xml",
+        "source": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\activity_term_and_conditions.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_bar_up_container.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_dashboard.xml",
+        "source": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\activity_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\com_facebook_smart_device_dialog_fragment.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\4a99e0c822e3718a9084afe2d4ef34fe87bc7ad6\\output\\res\\layout\\com_facebook_smart_device_dialog_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_document_file_reader.xml",
+        "source": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\activity_document_file_reader.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_frogot_password.xml",
+        "source": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\activity_frogot_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\list_view_folder_file.xml",
+        "source": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\list_view_folder_file.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_discussion_forum.xml",
+        "source": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\activity_discussion_forum.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_media_custom.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\notification_template_media_custom.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_frequently_ask_question.xml",
+        "source": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\activity_frequently_ask_question.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\list_view_search_gmp_suggestions.xml",
+        "source": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\list_view_search_gmp_suggestions.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_lines_media.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\notification_template_lines_media.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_contact_us.xml",
+        "source": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\activity_contact_us.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\list_view_search_gmp_file.xml",
+        "source": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\list_view_search_gmp_file.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_ask_gmp.xml",
+        "source": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\activity_ask_gmp.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\dialog_window_subscription.xml",
+        "source": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\dialog_window_subscription.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_alert_dialog_title_material.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\com_facebook_device_auth_dialog_fragment.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\4a99e0c822e3718a9084afe2d4ef34fe87bc7ad6\\output\\res\\layout\\com_facebook_device_auth_dialog_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\list_view_discuss_forum_questionf.xml",
+        "source": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\list_view_discuss_forum_questionf.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_toolbar.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_radio.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_simple.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_search_view.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_bar_title_item.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_mode_bar.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_action.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_about_gmp.xml",
+        "source": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\activity_about_gmp.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\com_facebook_activity_layout.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\4a99e0c822e3718a9084afe2d4ef34fe87bc7ad6\\output\\res\\layout\\com_facebook_activity_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_icon.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_content_include.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\messenger_button_send_blue_round.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\4a99e0c822e3718a9084afe2d4ef34fe87bc7ad6\\output\\res\\layout\\messenger_button_send_blue_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\messenger_button_send_white_large.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\4a99e0c822e3718a9084afe2d4ef34fe87bc7ad6\\output\\res\\layout\\messenger_button_send_white_large.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_sign_up_members.xml",
+        "source": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\activity_sign_up_members.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_alert_dialog_material.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_about_us.xml",
+        "source": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\activity_about_us.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_layout.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\select_dialog_item_material.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_select_dialog_material.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_dialog_title_material.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_post_question.xml",
+        "source": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\activity_post_question.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_media.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\com_facebook_login_fragment.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\4a99e0c822e3718a9084afe2d4ef34fe87bc7ad6\\output\\res\\layout\\com_facebook_login_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_popup_menu_header_item_layout.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_search_gmp.xml",
+        "source": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\activity_search_gmp.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_document_files.xml",
+        "source": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\activity_document_files.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\messenger_button_send_white_small.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\4a99e0c822e3718a9084afe2d4ef34fe87bc7ad6\\output\\res\\layout\\messenger_button_send_white_small.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_menu_item_layout.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_activity_chooser_view.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\dialog_window_login.xml",
+        "source": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\dialog_window_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\messenger_button_send_blue_large.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\4a99e0c822e3718a9084afe2d4ef34fe87bc7ad6\\output\\res\\layout\\messenger_button_send_blue_large.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_login.xml",
+        "source": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_search_option.xml",
+        "source": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\activity_search_option.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\select_dialog_multichoice_material.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\messenger_button_send_white_round.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\4a99e0c822e3718a9084afe2d4ef34fe87bc7ad6\\output\\res\\layout\\messenger_button_send_white_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\action_bar_custom_layout.xml",
+        "source": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\action_bar_custom_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\activity_splash.xml",
+        "source": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_menu_layout.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\messenger_button_send_blue_small.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\4a99e0c822e3718a9084afe2d4ef34fe87bc7ad6\\output\\res\\layout\\messenger_button_send_blue_small.xml"
+    },
+    {
+        "merged": "C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\release\\layout\\com_facebook_tooltip_bubble.xml",
+        "source": "C:\\Users\\BD1\\.android\\build-cache\\4a99e0c822e3718a9084afe2d4ef34fe87bc7ad6\\output\\res\\layout\\com_facebook_tooltip_bubble.xml"
+    }
+]

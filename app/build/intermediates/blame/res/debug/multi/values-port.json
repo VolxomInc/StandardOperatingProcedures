@@ -1,0 +1,50 @@
+[
+    {
+        "outputFile": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 55,
+                    "endOffset": 106
+                },
+                "from": {
+                    "file": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\values-port\\values-port.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 55,
+                        "endOffset": 106
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 55,
+                    "endOffset": 106
+                },
+                "from": {
+                    "file": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/values-port/values-port.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 55,
+                        "endOffset": 106
+                    }
+                }
+            }
+        ]
+    }
+]

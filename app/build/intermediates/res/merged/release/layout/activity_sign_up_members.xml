@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/signUp_slogan_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20.0dip"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/signUpLogo"
+                    style="@style/splashLogo"
+                    android:layout_width="@dimen/loginLogo_width"
+                    android:layout_height="@dimen/loginLogo_height"
+                    android:contentDescription="@string/sloganImageDescription"
+                    android:src="@drawable/logo" />
+
+                <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView
+                    android:id="@+id/signUpSlogan"
+                    style="@style/splashSlogan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sloganText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/login_inputField_layout"
+                    android:background="@drawable/shape_rectangle_input_field"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:weightSum="1.0">
+
+                    <RelativeLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_weight="0.9"
+                        android:gravity="center">
+
+                        <com.gmpsop.standardoperatingprocedures.CustomViews.MyEditText
+                            android:id="@+id/signUpFirstLastName"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/loginEmailIdImage_width_height"
+                            android:background="@color/transparent"
+                            android:hint="@string/signUp_hintFirstLastName"
+                            android:inputType="textPersonName"
+                            android:padding="0.0dip"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="@color/hint_text_color"
+                            android:textSize="12.0sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/login_inputField_layout"
+                    android:background="@drawable/shape_rectangle_input_field"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:weightSum="1.0">
+
+                    <RelativeLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_weight="0.9"
+                        android:gravity="center">
+
+                        <com.gmpsop.standardoperatingprocedures.CustomViews.MyEditText
+                            android:id="@+id/signUpUserName"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/loginEmailIdImage_width_height"
+                            android:background="@color/transparent"
+                            android:hint="@string/signUp_hintUserName"
+                            android:inputType="textPersonName"
+                            android:padding="0.0dip"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="@color/hint_text_color"
+                            android:textSize="12.0sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+               <!-- <LinearLayout
+                    style="@style/login_inputField_layout"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="1.0">
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.49"
+                        android:background="@drawable/shape_rectangle_input_field"
+                        android:gravity="center"
+                        android:weightSum="0.49">
+
+                        <RelativeLayout
+                            android:layout_width="0.0dip"
+                            android:layout_height="30.0dip"
+                            android:layout_weight="0.39"
+                            android:gravity="center">
+
+                            <com.gmpsop.standardoperatingprocedures.CustomViews.MyEditText
+                                android:id="@+id/signUpStreetAddress"
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/loginEmailIdImage_width_height"
+                                android:background="@color/transparent"
+                                android:hint="@string/signUp_hintStreetAddress"
+                                android:inputType="textPostalAddress"
+                                android:padding="0.0dip"
+                                android:textColor="@color/hint_text_color"
+                                android:textColorHint="@color/hint_text_color"
+                                android:textSize="12.0sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.02" />
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.49"
+                        android:background="@drawable/shape_rectangle_input_field"
+                        android:gravity="center"
+                        android:weightSum="0.49">
+
+                        <RelativeLayout
+                            android:layout_width="0.0dip"
+                            android:layout_height="30.0dip"
+                            android:layout_weight="0.39"
+                            android:gravity="center">
+
+                            <com.gmpsop.standardoperatingprocedures.CustomViews.MyEditText
+                                android:id="@+id/signUpCity"
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/loginEmailIdImage_width_height"
+                                android:background="@color/transparent"
+                                android:hint="@string/signUp_hintCity"
+                                android:inputType="text"
+                                android:padding="0.0dip"
+                                android:textColor="@color/hint_text_color"
+                                android:textColorHint="@color/hint_text_color"
+                                android:textSize="12.0sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/login_inputField_layout"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="1.0">
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.49"
+                        android:background="@drawable/shape_rectangle_input_field"
+                        android:gravity="center"
+                        android:weightSum="0.49">
+
+                        <RelativeLayout
+                            android:layout_width="0.0dip"
+                            android:layout_height="30.0dip"
+                            android:layout_weight="0.39"
+                            android:gravity="center">
+
+                            <com.gmpsop.standardoperatingprocedures.CustomViews.MyEditText
+                                android:id="@+id/signUpState"
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/loginEmailIdImage_width_height"
+                                android:background="@color/transparent"
+                                android:hint="@string/signUp_hintState"
+                                android:inputType="textPostalAddress"
+                                android:padding="0.0dip"
+                                android:textColor="@color/hint_text_color"
+                                android:textColorHint="@color/hint_text_color"
+                                android:textSize="12.0sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.02" />
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.49"
+                        android:background="@drawable/shape_rectangle_input_field"
+                        android:gravity="center"
+                        android:weightSum="0.49">
+
+                        <RelativeLayout
+                            android:layout_width="0.0dip"
+                            android:layout_height="30.0dip"
+                            android:layout_weight="0.39"
+                            android:gravity="center">
+
+                            <com.gmpsop.standardoperatingprocedures.CustomViews.MyEditText
+                                android:id="@+id/signUpZipCode"
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/loginEmailIdImage_width_height"
+                                android:background="@color/transparent"
+                                android:hint="@string/signUp_hintZipCode"
+                                android:inputType="number"
+                                android:padding="0.0dip"
+                                android:textColor="@color/hint_text_color"
+                                android:textColorHint="@color/hint_text_color"
+                                android:textSize="12.0sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>-->
+
+                <LinearLayout
+                    style="@style/login_inputField_layout"
+                    android:background="@drawable/shape_rectangle_input_field"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:weightSum="1.0">
+
+                    <RelativeLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_weight="0.9"
+                        android:gravity="center">
+
+                        <com.gmpsop.standardoperatingprocedures.CustomViews.MyEditText
+                            android:id="@+id/signUpEmailAddress"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/loginEmailIdImage_width_height"
+                            android:background="@color/transparent"
+                            android:hint="@string/signUp_hintEmailAddress"
+                            android:inputType="textEmailAddress"
+                            android:padding="0.0dip"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="@color/hint_text_color"
+                            android:textSize="12.0sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/login_inputField_layout"
+                    android:background="@drawable/shape_rectangle_input_field"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:weightSum="1.0">
+
+                    <RelativeLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_weight="0.9"
+                        android:gravity="center">
+
+                        <com.gmpsop.standardoperatingprocedures.CustomViews.MyEditText
+                            android:id="@+id/signUpPassword"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/loginEmailIdImage_width_height"
+                            android:background="@color/transparent"
+                            android:hint="@string/signUp_hintPassword"
+                            android:inputType="textPassword"
+                            android:padding="0.0dip"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="@color/hint_text_color"
+                            android:textSize="12.0sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/login_inputField_layout"
+                    android:background="@drawable/shape_rectangle_input_field"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:weightSum="1.0">
+
+                    <RelativeLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_weight="0.9"
+                        android:gravity="center">
+
+                        <com.gmpsop.standardoperatingprocedures.CustomViews.MyEditText
+                            android:id="@+id/signUpConfirmPassword"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/loginEmailIdImage_width_height"
+                            android:background="@color/transparent"
+                            android:hint="@string/signUp_hintConfirmPassword"
+                            android:inputType="textPassword"
+                            android:padding="0.0dip"
+                            android:textColor="@color/colorPrimary"
+                            android:textColorHint="@color/hint_text_color"
+                            android:textSize="12.0sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/login_inputField_layout"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="1.0">
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.49" />
+
+                    <View
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.02" />
+
+                    <LinearLayout
+                        android:id="@+id/signUpButtonLayout"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.49"
+                        android:background="@drawable/shape_rectangle_button"
+                        android:gravity="center"
+                        android:weightSum="0.49">
+
+                        <RelativeLayout
+                            android:layout_width="0.0dip"
+                            android:layout_height="30.0dip"
+                            android:layout_weight="0.39"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView
+                                    android:id="@+id/signUpButtonText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/loginEmailIdImage_width_height"
+                                    android:layout_gravity="center"
+                                    android:text="@string/signUp_ButtonText"
+                                    android:textColor="@color/white" />
+
+                                <ImageView
+                                    android:id="@+id/signUpButtonPointer"
+                                    android:layout_width="35.0dip"
+                                    android:layout_height="@dimen/loginEmailIdImage_width_height"
+                                    android:contentDescription="@string/signUp_ButtonImage"
+                                    android:src="@drawable/login_pointer" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/login_inputField_layout"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+            </LinearLayout>
+            <LinearLayout
+                style="@style/login_inputField_layout"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+            </LinearLayout>
+            <LinearLayout
+                style="@style/login_inputField_layout"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+            </LinearLayout><LinearLayout
+            style="@style/login_inputField_layout"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/signUp_agreementText"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+
+                    android:textSize="14.0sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextViewBold
+                        android:id="@+id/signUpTermOfUse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="Terms of Use "
+                        android:textColor="@color/colorPrimary" />
+
+                    <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="and "
+                        android:textColor="@color/colorPrimary" />
+
+                    <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextViewBold
+                        android:id="@+id/signUpPrivacyPolicy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="Privacy Policy"
+                        android:textColor="@color/colorPrimary" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

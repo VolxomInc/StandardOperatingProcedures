@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context="com.gmpsop.standardoperatingprocedures.Activities.TermAndConditions">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/FAQs_title"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
+
+        <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/FAQs_quest1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/FAQs_ans1"
+            android:textColor="@color/sloganColorBlack"
+            android:textSize="14sp" />
+
+        <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/FAQs_quest2"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/FAQs_ans2"
+            android:textColor="@color/sloganColorBlack"
+            android:textSize="14sp" />
+
+        <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/FAQs_quest3"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/FAQs_ans3"
+            android:textColor="@color/sloganColorBlack"
+            android:textSize="14sp" />
+
+        <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/FAQs_quest4"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/FAQs_ans4"
+            android:textColor="@color/sloganColorBlack"
+            android:textSize="14sp" />
+
+        <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/FAQs_quest5"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/FAQs_ans5"
+            android:textColor="@color/sloganColorBlack"
+            android:textSize="14sp" />
+
+        <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/FAQs_quest6"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/FAQs_ans6"
+            android:textColor="@color/sloganColorBlack"
+            android:textSize="14sp" />
+
+        <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/FAQs_quest7"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/FAQs_ans7"
+            android:textColor="@color/sloganColorBlack"
+            android:textSize="14sp" />
+
+        <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/FAQs_quest8"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/FAQs_ans8"
+            android:textColor="@color/sloganColorBlack"
+            android:textSize="14sp" />
+
+        <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/FAQs_quest9"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/FAQs_ans9"
+            android:textColor="@color/sloganColorBlack"
+            android:textSize="14sp" />
+
+        <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/FAQs_quest10"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/FAQs_ans10"
+            android:textColor="@color/sloganColorBlack"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</ScrollView>

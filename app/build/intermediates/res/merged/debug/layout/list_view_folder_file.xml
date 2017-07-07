@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:weightSum="6">
+
+    <ImageView
+        android:id="@+id/listViewFolderImageView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/listViewFolderImageView"
+        android:layout_weight="1"
+        android:contentDescription="@string/list_view_folder_content_des"
+        android:adjustViewBounds="true"
+        android:padding="10dp"
+        android:src="@drawable/document_folder" />
+
+    <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView
+        android:id="@+id/listViewFolderTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:text="@string/list_view_folder_Place"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp" />
+
+   <!-- <ImageView
+        android:id="@+id/listViewFolderExpand"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_weight="0.5"
+        android:contentDescription="@string/list_view_folder_expanding"
+        android:src="@drawable/logo" />-->
+
+</LinearLayout>

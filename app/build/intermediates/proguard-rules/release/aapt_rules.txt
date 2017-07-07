@@ -1,0 +1,282 @@
+# view res/layout/abc_alert_dialog_material.xml #generated:41
+-keep class android.support.v4.widget.NestedScrollView { <init>(...); }
+
+# view res/layout/abc_alert_dialog_button_bar_material.xml #generated:43
+# view res/layout/abc_alert_dialog_material.xml #generated:52
+# view res/layout/abc_alert_dialog_material.xml #generated:66
+# view res/layout/abc_alert_dialog_title_material.xml #generated:56
+-keep class android.support.v4.widget.Space { <init>(...); }
+
+# view res/layout/abc_select_dialog_material.xml #generated:23
+-keep class android.support.v7.app.AlertController$RecycleListView { <init>(...); }
+
+# view res/layout/abc_action_menu_item_layout.xml #generated:17
+-keep class android.support.v7.view.menu.ActionMenuItemView { <init>(...); }
+
+# view res/layout/abc_expanded_menu_layout.xml #generated:17
+-keep class android.support.v7.view.menu.ExpandedMenuView { <init>(...); }
+
+# view res/layout/abc_list_menu_item_layout.xml #generated:17
+# view res/layout/abc_popup_menu_item_layout.xml #generated:17
+-keep class android.support.v7.view.menu.ListMenuItemView { <init>(...); }
+
+# view res/layout/abc_screen_toolbar.xml #generated:27
+-keep class android.support.v7.widget.ActionBarContainer { <init>(...); }
+
+# view res/layout/abc_action_mode_bar.xml #generated:19
+# view res/layout/abc_screen_toolbar.xml #generated:43
+-keep class android.support.v7.widget.ActionBarContextView { <init>(...); }
+
+# view res/layout/abc_screen_toolbar.xml #generated:17
+-keep class android.support.v7.widget.ActionBarOverlayLayout { <init>(...); }
+
+# view res/layout/abc_action_menu_layout.xml #generated:17
+-keep class android.support.v7.widget.ActionMenuView { <init>(...); }
+
+# view res/layout/abc_activity_chooser_view.xml #generated:19
+-keep class android.support.v7.widget.ActivityChooserView$InnerLayout { <init>(...); }
+
+# view res/layout/abc_alert_dialog_material.xml #generated:18
+-keep class android.support.v7.widget.AlertDialogLayout { <init>(...); }
+
+# view res/layout/com_facebook_device_auth_dialog_fragment.xml #generated:45
+# view res/layout/com_facebook_smart_device_dialog_fragment.xml #generated:47
+-keep class android.support.v7.widget.AppCompatImageView { <init>(...); }
+
+# view res/layout/abc_alert_dialog_button_bar_material.xml #generated:26
+-keep class android.support.v7.widget.ButtonBarLayout { <init>(...); }
+
+# view res/layout/com_facebook_device_auth_dialog_fragment.xml #generated:22
+# view res/layout/com_facebook_smart_device_dialog_fragment.xml #generated:22
+-keep class android.support.v7.widget.CardView { <init>(...); }
+
+# view res/layout/abc_screen_content_include.xml #generated:19
+-keep class android.support.v7.widget.ContentFrameLayout { <init>(...); }
+
+# view res/layout/abc_alert_dialog_title_material.xml #generated:45
+-keep class android.support.v7.widget.DialogTitle { <init>(...); }
+
+# view res/layout/abc_screen_simple_overlay_action_mode.xml #generated:23
+-keep class android.support.v7.widget.FitWindowsFrameLayout { <init>(...); }
+
+# view res/layout/abc_dialog_title_material.xml #generated:22
+# view res/layout/abc_screen_simple.xml #generated:17
+-keep class android.support.v7.widget.FitWindowsLinearLayout { <init>(...); }
+
+# view res/layout/abc_search_view.xml #generated:75
+-keep class android.support.v7.widget.SearchView$SearchAutoComplete { <init>(...); }
+
+# view res/layout/abc_screen_toolbar.xml #generated:36
+-keep class android.support.v7.widget.Toolbar { <init>(...); }
+
+# view res/layout/abc_screen_simple.xml #generated:25
+# view res/layout/abc_screen_simple_overlay_action_mode.xml #generated:32
+-keep class android.support.v7.widget.ViewStubCompat { <init>(...); }
+
+# view AndroidManifest.xml #generated:118
+-keep class com.facebook.CustomTabMainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:114
+-keep class com.facebook.FacebookActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:128
+-keep class com.facebook.internal.FacebookInitProvider { <init>(...); }
+
+# view res/layout/activity_document_file_reader.xml #generated:9
+-keep class com.github.barteksc.pdfviewer.PDFView { <init>(...); }
+
+# view AndroidManifest.xml #generated:66
+-keep class com.gmpsop.standardoperatingprocedures.Activities.AboutGMP { <init>(...); }
+
+# view AndroidManifest.xml #generated:88
+-keep class com.gmpsop.standardoperatingprocedures.Activities.AboutUs { <init>(...); }
+
+# view AndroidManifest.xml #generated:94
+-keep class com.gmpsop.standardoperatingprocedures.Activities.AskGMP { <init>(...); }
+
+# view AndroidManifest.xml #generated:79
+-keep class com.gmpsop.standardoperatingprocedures.Activities.ContactUs { <init>(...); }
+
+# view AndroidManifest.xml #generated:47
+-keep class com.gmpsop.standardoperatingprocedures.Activities.Dashboard { <init>(...); }
+
+# view AndroidManifest.xml #generated:101
+-keep class com.gmpsop.standardoperatingprocedures.Activities.DiscussionForum { <init>(...); }
+
+# view AndroidManifest.xml #generated:78
+-keep class com.gmpsop.standardoperatingprocedures.Activities.DocumentFileReader { <init>(...); }
+
+# view AndroidManifest.xml #generated:75
+-keep class com.gmpsop.standardoperatingprocedures.Activities.DocumentFiles { <init>(...); }
+
+# view AndroidManifest.xml #generated:105
+-keep class com.gmpsop.standardoperatingprocedures.Activities.ForgotPassword { <init>(...); }
+
+# view AndroidManifest.xml #generated:85
+-keep class com.gmpsop.standardoperatingprocedures.Activities.FrequentlyAskQuestion { <init>(...); }
+
+# view AndroidManifest.xml #generated:39
+-keep class com.gmpsop.standardoperatingprocedures.Activities.Login { <init>(...); }
+
+# view AndroidManifest.xml #generated:109
+-keep class com.gmpsop.standardoperatingprocedures.Activities.PostQuestion { <init>(...); }
+
+# view AndroidManifest.xml #generated:91
+-keep class com.gmpsop.standardoperatingprocedures.Activities.SearchGMP { <init>(...); }
+
+# view AndroidManifest.xml #generated:97
+-keep class com.gmpsop.standardoperatingprocedures.Activities.SearchOption { <init>(...); }
+
+# view AndroidManifest.xml #generated:43
+-keep class com.gmpsop.standardoperatingprocedures.Activities.SignUpMembers { <init>(...); }
+
+# view AndroidManifest.xml #generated:28
+-keep class com.gmpsop.standardoperatingprocedures.Activities.Splash { <init>(...); }
+
+# view AndroidManifest.xml #generated:82
+-keep class com.gmpsop.standardoperatingprocedures.Activities.TermAndConditions { <init>(...); }
+
+# view AndroidManifest.xml #generated:20
+-keep class com.gmpsop.standardoperatingprocedures.AppController { <init>(...); }
+
+# view res/layout/activity_discussion_forum.xml #generated:39
+# view res/layout/activity_document_files.xml #generated:25
+# view res/layout/activity_frogot_password.xml #generated:60
+# view res/layout/activity_login.xml #generated:123
+# view res/layout/activity_login.xml #generated:80
+# view res/layout/activity_post_question.xml #generated:49
+# view res/layout/activity_post_question.xml #generated:79
+# view res/layout/activity_search_gmp.xml #generated:32
+# view res/layout/activity_sign_up_members.xml #generated:256
+# view res/layout/activity_sign_up_members.xml #generated:283
+# view res/layout/activity_sign_up_members.xml #generated:310
+# view res/layout/activity_sign_up_members.xml #generated:64
+# view res/layout/activity_sign_up_members.xml #generated:91
+-keep class com.gmpsop.standardoperatingprocedures.CustomViews.MyEditText { <init>(...); }
+
+# view res/layout/action_bar_custom_layout.xml #generated:10
+# view res/layout/activity_about_gmp.xml #generated:115
+# view res/layout/activity_about_gmp.xml #generated:142
+# view res/layout/activity_about_gmp.xml #generated:171
+# view res/layout/activity_about_gmp.xml #generated:24
+# view res/layout/activity_about_gmp.xml #generated:60
+# view res/layout/activity_about_gmp.xml #generated:87
+# view res/layout/activity_about_us.xml #generated:35
+# view res/layout/activity_about_us.xml #generated:50
+# view res/layout/activity_about_us.xml #generated:65
+# view res/layout/activity_ask_gmp.xml #generated:11
+# view res/layout/activity_contact_us.xml #generated:21
+# view res/layout/activity_dashboard.xml #generated:103
+# view res/layout/activity_dashboard.xml #generated:130
+# view res/layout/activity_dashboard.xml #generated:157
+# view res/layout/activity_dashboard.xml #generated:184
+# view res/layout/activity_dashboard.xml #generated:211
+# view res/layout/activity_dashboard.xml #generated:238
+# view res/layout/activity_dashboard.xml #generated:265
+# view res/layout/activity_dashboard.xml #generated:292
+# view res/layout/activity_dashboard.xml #generated:313
+# view res/layout/activity_dashboard.xml #generated:340
+# view res/layout/activity_dashboard.xml #generated:379
+# view res/layout/activity_dashboard.xml #generated:39
+# view res/layout/activity_dashboard.xml #generated:76
+# view res/layout/activity_discussion_forum.xml #generated:105
+# view res/layout/activity_discussion_forum.xml #generated:121
+# view res/layout/activity_discussion_forum.xml #generated:13
+# view res/layout/activity_discussion_forum.xml #generated:79
+# view res/layout/activity_frequently_ask_question.xml #generated:115
+# view res/layout/activity_frequently_ask_question.xml #generated:131
+# view res/layout/activity_frequently_ask_question.xml #generated:147
+# view res/layout/activity_frequently_ask_question.xml #generated:163
+# view res/layout/activity_frequently_ask_question.xml #generated:179
+# view res/layout/activity_frequently_ask_question.xml #generated:35
+# view res/layout/activity_frequently_ask_question.xml #generated:51
+# view res/layout/activity_frequently_ask_question.xml #generated:67
+# view res/layout/activity_frequently_ask_question.xml #generated:83
+# view res/layout/activity_frequently_ask_question.xml #generated:99
+# view res/layout/activity_frogot_password.xml #generated:28
+# view res/layout/activity_frogot_password.xml #generated:37
+# view res/layout/activity_frogot_password.xml #generated:94
+# view res/layout/activity_login.xml #generated:151
+# view res/layout/activity_login.xml #generated:181
+# view res/layout/activity_login.xml #generated:208
+# view res/layout/activity_login.xml #generated:230
+# view res/layout/activity_login.xml #generated:282
+# view res/layout/activity_login.xml #generated:38
+# view res/layout/activity_post_question.xml #generated:174
+# view res/layout/activity_post_question.xml #generated:18
+# view res/layout/activity_post_question.xml #generated:201
+# view res/layout/activity_post_question.xml #generated:245
+# view res/layout/activity_post_question.xml #generated:26
+# view res/layout/activity_post_question.xml #generated:97
+# view res/layout/activity_search_gmp.xml #generated:152
+# view res/layout/activity_search_gmp.xml #generated:63
+# view res/layout/activity_search_gmp.xml #generated:98
+# view res/layout/activity_search_option.xml #generated:115
+# view res/layout/activity_search_option.xml #generated:120
+# view res/layout/activity_search_option.xml #generated:32
+# view res/layout/activity_search_option.xml #generated:41
+# view res/layout/activity_search_option.xml #generated:82
+# view res/layout/activity_search_option.xml #generated:86
+# view res/layout/activity_sign_up_members.xml #generated:36
+# view res/layout/activity_sign_up_members.xml #generated:361
+# view res/layout/activity_sign_up_members.xml #generated:409
+# view res/layout/activity_sign_up_members.xml #generated:431
+# view res/layout/activity_splash.xml #generated:25
+# view res/layout/activity_term_and_conditions.xml #generated:26
+# view res/layout/activity_term_and_conditions.xml #generated:43
+# view res/layout/activity_term_and_conditions.xml #generated:60
+# view res/layout/activity_term_and_conditions.xml #generated:77
+# view res/layout/dialog_window_login.xml #generated:24
+# view res/layout/dialog_window_subscription.xml #generated:24
+# view res/layout/list_view_discuss_forum_questionf.xml #generated:19
+# view res/layout/list_view_discuss_forum_questionf.xml #generated:63
+# view res/layout/list_view_discuss_forum_questionf.xml #generated:91
+# view res/layout/list_view_folder_file.xml #generated:20
+# view res/layout/list_view_search_gmp_file.xml #generated:20
+# view res/layout/list_view_search_gmp_suggestions.xml #generated:12
+-keep class com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView { <init>(...); }
+
+# view res/layout/activity_about_us.xml #generated:15
+# view res/layout/activity_about_us.xml #generated:26
+# view res/layout/activity_about_us.xml #generated:41
+# view res/layout/activity_about_us.xml #generated:56
+# view res/layout/activity_contact_us.xml #generated:11
+# view res/layout/activity_frequently_ask_question.xml #generated:106
+# view res/layout/activity_frequently_ask_question.xml #generated:122
+# view res/layout/activity_frequently_ask_question.xml #generated:138
+# view res/layout/activity_frequently_ask_question.xml #generated:15
+# view res/layout/activity_frequently_ask_question.xml #generated:154
+# view res/layout/activity_frequently_ask_question.xml #generated:170
+# view res/layout/activity_frequently_ask_question.xml #generated:26
+# view res/layout/activity_frequently_ask_question.xml #generated:42
+# view res/layout/activity_frequently_ask_question.xml #generated:58
+# view res/layout/activity_frequently_ask_question.xml #generated:74
+# view res/layout/activity_frequently_ask_question.xml #generated:90
+# view res/layout/activity_search_gmp.xml #generated:133
+# view res/layout/activity_search_gmp.xml #generated:164
+# view res/layout/activity_search_gmp.xml #generated:195
+# view res/layout/activity_search_gmp.xml #generated:221
+# view res/layout/activity_search_gmp.xml #generated:253
+# view res/layout/activity_search_gmp.xml #generated:281
+# view res/layout/activity_search_gmp.xml #generated:73
+# view res/layout/activity_sign_up_members.xml #generated:424
+# view res/layout/activity_sign_up_members.xml #generated:437
+# view res/layout/activity_term_and_conditions.xml #generated:16
+# view res/layout/activity_term_and_conditions.xml #generated:34
+# view res/layout/activity_term_and_conditions.xml #generated:51
+# view res/layout/activity_term_and_conditions.xml #generated:68
+# view res/layout/dialog_window_login.xml #generated:111
+# view res/layout/dialog_window_login.xml #generated:15
+# view res/layout/dialog_window_login.xml #generated:48
+# view res/layout/dialog_window_login.xml #generated:81
+# view res/layout/dialog_window_subscription.xml #generated:15
+# view res/layout/dialog_window_subscription.xml #generated:48
+# view res/layout/dialog_window_subscription.xml #generated:76
+-keep class com.gmpsop.standardoperatingprocedures.CustomViews.MyTextViewBold { <init>(...); }
+
+# view res/layout/activity_ask_gmp.xml #generated:32
+-keep class com.mikhaellopez.circularprogressbar.CircularProgressBar { <init>(...); }
+
+# view res/layout/activity_post_question.xml #generated:136
+-keep class mabbas007.tagsedittext.TagsEditText { <init>(...); }
+

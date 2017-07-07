@@ -1,0 +1,610 @@
+[
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_device_auth_dialog_fragment.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\0d3f5a0506079ae46e81c24303693db875a02a35\\output\\res\\layout\\com_facebook_device_auth_dialog_fragment.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/messenger_button_send_blue_large.xml",
+        "source": "/home/velootek/.android/build-cache/73deeadc5e9ec92dfbed20f0cd45eae79d598034/output/res/layout/messenger_button_send_blue_large.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/abc_search_view.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/dialog_window_subscription.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/src/main/res/layout/dialog_window_subscription.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_view_search_gmp_file.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\list_view_search_gmp_file.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/messenger_button_send_blue_small.xml",
+        "source": "/home/velootek/.android/build-cache/73deeadc5e9ec92dfbed20f0cd45eae79d598034/output/res/layout/messenger_button_send_blue_small.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/select_dialog_item_material.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/activity_frogot_password.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/src/main/res/layout/activity_frogot_password.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/activity_frequently_ask_question.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/src/main/res/layout/activity_frequently_ask_question.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_search_option.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\activity_search_option.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_sign_up_members.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\activity_sign_up_members.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_icon_group.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_search_gmp.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\activity_search_gmp.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/activity_dashboard.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/src/main/res/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/list_view_discuss_forum_question_comment.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/src/main/res/layout/list_view_discuss_forum_question_comment.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_window_subscription.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\dialog_window_subscription.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/list_view_search_gmp_file.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/src/main/res/layout/list_view_search_gmp_file.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/com_facebook_device_auth_dialog_fragment.xml",
+        "source": "/home/velootek/.android/build-cache/73deeadc5e9ec92dfbed20f0cd45eae79d598034/output/res/layout/com_facebook_device_auth_dialog_fragment.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/notification_template_custom_big.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_dashboard.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\activity_dashboard.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/activity_login.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/src/main/res/layout/activity_login.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/activity_document_files.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/src/main/res/layout/activity_document_files.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/list_view_discuss_forum_questionf.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/src/main/res/layout/list_view_discuss_forum_questionf.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/activity_about_gmp.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/src/main/res/layout/activity_about_gmp.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_white_round.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\0d3f5a0506079ae46e81c24303693db875a02a35\\output\\res\\layout\\messenger_button_send_white_round.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_smart_device_dialog_fragment.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\0d3f5a0506079ae46e81c24303693db875a02a35\\output\\res\\layout\\com_facebook_smart_device_dialog_fragment.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_about_gmp.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\activity_about_gmp.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_frogot_password.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\activity_frogot_password.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_round.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\0d3f5a0506079ae46e81c24303693db875a02a35\\output\\res\\layout\\messenger_button_send_blue_round.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/activity_ask_gmp.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/src/main/res/layout/activity_ask_gmp.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_title_material.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_discussion_forum.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\activity_discussion_forum.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/com_facebook_tooltip_bubble.xml",
+        "source": "/home/velootek/.android/build-cache/73deeadc5e9ec92dfbed20f0cd45eae79d598034/output/res/layout/com_facebook_tooltip_bubble.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/activity_discussion_forum.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/src/main/res/layout/activity_discussion_forum.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/activity_about_us.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/src/main/res/layout/activity_about_us.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/notification_template_lines_media.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/notification_template_lines_media.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_login_fragment.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\0d3f5a0506079ae46e81c24303693db875a02a35\\output\\res\\layout\\com_facebook_login_fragment.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_white_small.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\0d3f5a0506079ae46e81c24303693db875a02a35\\output\\res\\layout\\messenger_button_send_white_small.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/com_facebook_smart_device_dialog_fragment.xml",
+        "source": "/home/velootek/.android/build-cache/73deeadc5e9ec92dfbed20f0cd45eae79d598034/output/res/layout/com_facebook_smart_device_dialog_fragment.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/activity_post_question.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/src/main/res/layout/activity_post_question.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/notification_action.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/notification_action.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_window_login.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\dialog_window_login.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_about_us.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\activity_about_us.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/abc_screen_simple.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/list_view_search_gmp_suggestions.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/src/main/res/layout/list_view_search_gmp_suggestions.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media_custom.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\notification_template_media_custom.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/notification_template_media.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_view_discuss_forum_questionf.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\list_view_discuss_forum_questionf.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/notification_action_tombstone.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/activity_discussion_forum_question.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/src/main/res/layout/activity_discussion_forum_question.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_document_file_reader.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\activity_document_file_reader.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/activity_splash.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/src/main/res/layout/activity_splash.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_activity_layout.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\0d3f5a0506079ae46e81c24303693db875a02a35\\output\\res\\layout\\com_facebook_activity_layout.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/activity_search_option.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/src/main/res/layout/activity_search_option.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_frequently_ask_question.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\activity_frequently_ask_question.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_large.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\0d3f5a0506079ae46e81c24303693db875a02a35\\output\\res\\layout\\messenger_button_send_blue_large.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/list_view_folder_file.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/src/main/res/layout/list_view_folder_file.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/activity_term_and_conditions.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/src/main/res/layout/activity_term_and_conditions.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/messenger_button_send_white_small.xml",
+        "source": "/home/velootek/.android/build-cache/73deeadc5e9ec92dfbed20f0cd45eae79d598034/output/res/layout/messenger_button_send_white_small.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_small.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\0d3f5a0506079ae46e81c24303693db875a02a35\\output\\res\\layout\\messenger_button_send_blue_small.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/notification_template_icon_group.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\action_bar_custom_layout.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\action_bar_custom_layout.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_white_large.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\0d3f5a0506079ae46e81c24303693db875a02a35\\output\\res\\layout\\messenger_button_send_white_large.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\notification_template_lines_media.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_custom_big.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_header_item_layout.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/dialog_window_login.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/src/main/res/layout/dialog_window_login.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/messenger_button_send_white_round.xml",
+        "source": "/home/velootek/.android/build-cache/73deeadc5e9ec92dfbed20f0cd45eae79d598034/output/res/layout/messenger_button_send_white_round.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_contact_us.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\activity_contact_us.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/notification_template_media_custom.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/notification_template_media_custom.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_term_and_conditions.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\activity_term_and_conditions.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/activity_sign_up_members.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/src/main/res/layout/activity_sign_up_members.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\com_facebook_tooltip_bubble.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\0d3f5a0506079ae46e81c24303693db875a02a35\\output\\res\\layout\\com_facebook_tooltip_bubble.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_splash.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/abc_screen_content_include.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/messenger_button_send_blue_round.xml",
+        "source": "/home/velootek/.android/build-cache/73deeadc5e9ec92dfbed20f0cd45eae79d598034/output/res/layout/messenger_button_send_blue_round.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_ask_gmp.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\activity_ask_gmp.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/com_facebook_activity_layout.xml",
+        "source": "/home/velootek/.android/build-cache/73deeadc5e9ec92dfbed20f0cd45eae79d598034/output/res/layout/com_facebook_activity_layout.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_view_folder_file.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\list_view_folder_file.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_document_files.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\activity_document_files.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/action_bar_custom_layout.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/src/main/res/layout/action_bar_custom_layout.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/activity_search_gmp.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/src/main/res/layout/activity_search_gmp.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/activity_document_file_reader.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/src/main/res/layout/activity_document_file_reader.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/messenger_button_send_white_large.xml",
+        "source": "/home/velootek/.android/build-cache/73deeadc5e9ec92dfbed20f0cd45eae79d598034/output/res/layout/messenger_button_send_white_large.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/activity_contact_us.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/src/main/res/layout/activity_contact_us.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\.android\\build-cache\\bb8369e13ec6f87d7f96b722f38db70ea73c2ca5\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_view_search_gmp_suggestions.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\list_view_search_gmp_suggestions.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_post_question.xml",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\layout\\activity_post_question.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
+        "source": "/home/velootek/.android/build-cache/6cba7739ce977ca3f37242e951394a929e3561dd/output/res/layout/abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/layout/com_facebook_login_fragment.xml",
+        "source": "/home/velootek/.android/build-cache/73deeadc5e9ec92dfbed20f0cd45eae79d598034/output/res/layout/com_facebook_login_fragment.xml"
+    }
+]

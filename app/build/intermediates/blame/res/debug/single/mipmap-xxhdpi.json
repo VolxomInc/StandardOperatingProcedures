@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\xxhdpi_logo.png",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/C:\\Users\\BD1\\AndroidStudioProjects\\StandardOperatingProcedures\\app\\src\\main\\res\\mipmap-xxhdpi\\xxhdpi_logo.png"
+    },
+    {
+        "merged": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/xxhdpi_logo.png",
+        "source": "/home/velootek/Documents/guru/StandardOperatingProcedures/app/src/main/res/mipmap-xxhdpi/xxhdpi_logo.png"
+    }
+]
