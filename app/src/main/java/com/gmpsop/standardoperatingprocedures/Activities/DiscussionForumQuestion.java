@@ -155,7 +155,7 @@ public class DiscussionForumQuestion extends Activity implements View.OnClickLis
         params.put(Constants.PARAMETER_QUESTION_ID, question.getId());
         JSONObject parameters = new JSONObject(params);
 
-        JsonObjectRequest jsonRequest = new JsonObjectRequest(Request.Method.GET, Constants.FORUM_COMMENTS, parameters, new Response.Listener<JSONObject>() {
+        JsonObjectRequest jsonRequest = new JsonObjectRequest(Request.Method.POST, Constants.FORUM_COMMENTS, parameters, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
                 //TODO: handle success
@@ -185,8 +185,8 @@ public class DiscussionForumQuestion extends Activity implements View.OnClickLis
 
 
                     } else {
-                        MyToast.showLong(getApplicationContext(),
-                                "Error pulling comments or no comments");
+//                        MyToast.showLong(getApplicationContext(),
+//                                "Error pulling comments or no comments");
                         Log.e(TAG, "Error while pulling comments");
 
                         noCommentsTextView.setVisibility(View.VISIBLE);
@@ -202,8 +202,8 @@ public class DiscussionForumQuestion extends Activity implements View.OnClickLis
                 error.printStackTrace();
                 //TODO: handle failure
                 Log.e(TAG, "pulling comments Error: " + error.getMessage());
-                MyToast.showShort(getApplicationContext(),
-                        error.getMessage());
+//                MyToast.showShort(getApplicationContext(),
+//                        error.getMessage());
                     pDialog.dismiss();
             }
         });
