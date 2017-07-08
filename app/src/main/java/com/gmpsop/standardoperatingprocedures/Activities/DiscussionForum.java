@@ -296,10 +296,11 @@ public class DiscussionForum extends Activity implements View.OnClickListener, A
         String tag_string_req = "req_increase_view_count";
 
         Map<String, String> params = new HashMap<String, String>();
-        params.put(Constants.PARAMETER_VIEWER_EMAIL, session.getUserDetail().getEmail().toString());
-        Log.d(TAG, "user email: " + session.getUserDetail().getEmail() );
-        params.put(Constants.PARAMETER_QUESTION_ID, question_id.toString());
-        Log.d(TAG, "question_id: " + question_id);
+        params.put(Constants.PARAMETER_VIEWER_EMAIL, session.getUserDetail().getEmail());
+//        Log.d(TAG, "user email: " + session.getUserDetail().getEmail());
+        params.put(Constants.PARAMETER_QUESTION_ID, question_id);
+        Log.d(TAG, "sending increase_viewcount with user_email & question_id: "
+                + session.getUserDetail().getEmail() + ", " + question_id);
 
         JSONObject parameters = new JSONObject(params);
 

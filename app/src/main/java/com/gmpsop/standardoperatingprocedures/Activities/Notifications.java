@@ -16,11 +16,12 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.gmpsop.standardoperatingprocedures.Adapters.DiscussionCommentListAdapter;
+import com.gmpsop.standardoperatingprocedures.Adapters.NotificationListAdapter;
 import com.gmpsop.standardoperatingprocedures.AppController;
 import com.gmpsop.standardoperatingprocedures.Helper.Constants;
 import com.gmpsop.standardoperatingprocedures.Helper.MyToast;
 import com.gmpsop.standardoperatingprocedures.Helper.SessionManager;
+import com.gmpsop.standardoperatingprocedures.Models.NotificationModel;
 import com.gmpsop.standardoperatingprocedures.R;
 
 import org.json.JSONArray;
@@ -42,8 +43,8 @@ public class Notifications extends Activity implements View.OnClickListener{
 //    EditText searchQuestion;
     RelativeLayout postComment, search;
     ListView notificationsListView;
-    DiscussionCommentListAdapter myAdapter;
-    ArrayList<com.gmpsop.standardoperatingprocedures.Models.DiscussionForumQuestionComment> commentsList = new ArrayList<>();
+    NotificationListAdapter myAdapter;
+    ArrayList<NotificationModel> notificationsList = new ArrayList<>();
 //    com.gmpsop.standardoperatingprocedures.Models.DiscussionForumQuestion question;
 
     private SessionManager session;
@@ -84,11 +85,8 @@ public class Notifications extends Activity implements View.OnClickListener{
         pullNotifications();
 
         //build notification model + hook it up
-//        myAdapter = new DiscussionCommentListAdapter(this,R.layout.list_view_discuss_forum_question_comment, commentsList);
-//        notificationsListView.setAdapter(myAdapter);
-
-        noNotificationsTextView.setVisibility(View.VISIBLE);
-        notificationsListView.setVisibility(GONE);
+        myAdapter = new NotificationListAdapter(this,R.layout.list_view_notification, notificationsList);
+        notificationsListView.setAdapter(myAdapter);
     }
 
     @Override
@@ -118,10 +116,10 @@ public class Notifications extends Activity implements View.OnClickListener{
 
         Map<String, String> params = new HashMap<String, String>();
         //set params for pulling notifications
-//        params.put(Constants.PARAMETER_QUESTION_ID, question.getId());
+        params.put(Constants.PARAMETER_EMAIL, session.getUserDetail().getEmail());
         JSONObject parameters = new JSONObject(params);
 
-        JsonObjectRequest jsonRequest = new JsonObjectRequest(Request.Method.POST, Constants.NOTIFICATIONS, parameters, new Response.Listener<JSONObject>() {
+        JsonObjectRequest jsonRequest = new JsonObjectRequest(Request.Method.POST, Constants.NOTIFICATIONS_BY_EMAIL, parameters, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
                 //TODO: handle success
@@ -137,10 +135,10 @@ public class Notifications extends Activity implements View.OnClickListener{
                         //add values to adapter
                         JSONArray list = response.getJSONArray(Constants.DOCUMENT_RESPONSE_DATA);
                         for (int i = 0; i < list.length(); i++) {
-                            commentsList.add(new com.gmpsop.standardoperatingprocedures.Models.DiscussionForumQuestionComment(
-                                    list.getJSONObject(i).getString(Constants.PARAMETER_COMMENT),
-                                    list.getJSONObject(i).getString(Constants.PARAMETER_QUESTION_ID) ,
-                                    list.getJSONObject(i).getString(Constants.PARAMETER_COMMENTED_BY))
+                            notificationsList.add(new NotificationModel(
+                                    list.getJSONObject(i).getString(Constants.PARAMETER_NOTIFICATION_TEXT),
+                                    list.getJSONObject(i).getString(Constants.PARAMETER_EMAIL) ,
+                                    list.getJSONObject(i).getInt(Constants.PARAMETER_STATUS))
                             );
                         }
 

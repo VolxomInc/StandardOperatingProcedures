@@ -191,6 +191,10 @@ public class PostQuestion extends Activity implements View.OnClickListener {
                     int error = response.getInt(Constants.DOCUMENT_RESPONSE_MSG);
                     if (error == 0) {
                         MyToast.showLong(getApplicationContext(), "Question Posted successfully");
+
+                        //Trigger insert_notification for this
+                        insertNotification();
+
                         PostQuestion.this.finish();
                     } else {
                         MyToast.showLong(getApplicationContext(),
@@ -287,5 +291,54 @@ public class PostQuestion extends Activity implements View.OnClickListener {
                 validate_form();
                 break;
         }
+    }
+
+
+
+    public void insertNotification() {
+        String tag_string_req = "req_insert_notification";
+
+//        1- notification_text 2- email 3- notification_date 4- status
+        Map<String, String> params = new HashMap<String, String>();
+        params.put(Constants.PARAMETER_NOTIFICATION_TEXT, "You have successfully posted a question in Community Forum.");
+        params.put(Constants.PARAMETER_EMAIL, session.getUserDetail().getEmail());
+        long unixTime = System.currentTimeMillis() / 1000L;
+        params.put(Constants.PARAMETER_NOTIFICATION_DATE, String.valueOf(unixTime));
+        params.put(Constants.PARAMETER_STATUS, String.valueOf(0));
+
+        JSONObject parameters = new JSONObject(params);
+
+        JsonObjectRequest jsonRequest = new JsonObjectRequest(Request.Method.POST, Constants.INSERT_NOTIFICATION, parameters, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                //TODO: handle success
+                Log.d(TAG, "INSERT_NOTIFICATION Response: " + response.toString());
+                pDialog.dismiss();
+//                    hideDialog();
+
+                try {
+                    int error = response.getInt(Constants.DOCUMENT_RESPONSE_MSG);
+                    if (error == 0) {
+                        MyToast.showLong(getApplicationContext(), "INSERT_NOTIFICATION successfully");
+                    } else {
+                        MyToast.showLong(getApplicationContext(),
+                                "Error while INSERT_NOTIFICATION");
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                error.printStackTrace();
+                //TODO: handle failure
+                Log.e(TAG, "INSERT_NOTIFICATION Error: " + error.getMessage());
+                MyToast.showShort(getApplicationContext(),
+                        error.getMessage());
+//                    hideDialog();
+            }
+        });
+        AppController.getInstance().addToRequestQueue(jsonRequest, tag_string_req);
     }
 }
