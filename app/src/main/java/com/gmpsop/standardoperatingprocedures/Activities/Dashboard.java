@@ -273,7 +273,8 @@ public class Dashboard extends Activity implements View.OnClickListener {
         switch (v.getId()) {
             case R.id.dashboardLinearButton_notification:
 //                startActivity(new Intent(this , AskGMP.class));
-                MyToast.showShort(this, "Notification Clicked");
+//                MyToast.showShort(this, "Notification Clicked");
+                startActivity(new Intent(this , Notifications.class));
                 break;
             case R.id.dashboardLinearButton_searchGmpTerm:
                 startActivity(new Intent(this , SearchOption.class));

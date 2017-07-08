@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.gmpsop.standardoperatingprocedures.Activities.DiscussionForum">
+
+    <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/dashboard_notifications"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView
+        android:id="@+id/no_notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="start"
+        android:text="@string/no_notifications"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/notifications_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:background="@color/transparent"
+        android:divider="@null" />
+
+
+    <LinearLayout
+        android:id="@+id/post_question_loginSignUpLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:id="@+id/post_question_LoginButton"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.4"
+            android:background="@drawable/shape_rectangle_button"
+            android:gravity="center">
+
+            <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView
+                android:id="@+id/post_question_LoginButtonText"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/loginEmailIdImage_width_height"
+                android:layout_gravity="center"
+                android:text="@string/view_notifications_login"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.2"
+            android:gravity="center">
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/post_question_SignUpButton"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1.4"
+            android:background="@drawable/shape_rectangle_button"
+            android:gravity="center">
+
+            <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView
+                android:id="@+id/post_question_SignUpButtonText"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/loginEmailIdImage_width_height"
+                android:layout_gravity="center"
+                android:text="@string/post_question_create_account"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
