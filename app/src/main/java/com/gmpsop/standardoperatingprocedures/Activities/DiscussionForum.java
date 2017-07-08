@@ -41,6 +41,7 @@ public class DiscussionForum extends Activity implements View.OnClickListener, A
     ListView questionsListView;
     DiscussionQuestionListAdapter myAdapter;
     ArrayList<DiscussionForumQuestion> questionsList = new ArrayList<>();
+    ArrayList<DiscussionForumQuestion>  tempQuestionsList = new ArrayList<>();
 
     //pagination
     public int TOTAL_LIST_ITEMS = 80;
@@ -66,6 +67,7 @@ public class DiscussionForum extends Activity implements View.OnClickListener, A
 
         search = (RelativeLayout) findViewById(R.id.discussion_forum_search_button);
         search.setOnClickListener(this);
+        searchQuestion = (EditText) findViewById(R.id.discussion_forum_search_question);
 
         questionsListView = (ListView) findViewById(R.id.discussion_forum_questions_list);
         questionsListView.setOnItemClickListener(this);
@@ -75,6 +77,8 @@ public class DiscussionForum extends Activity implements View.OnClickListener, A
         myAdapter = new DiscussionQuestionListAdapter(this,R.layout.list_view_discuss_forum_questionf, questionsList);
         questionsListView.setAdapter(myAdapter);
 
+        //search functionality
+        questionsListView.setTextFilterEnabled(true);
 
     }
 
@@ -95,7 +99,27 @@ public class DiscussionForum extends Activity implements View.OnClickListener, A
                 startActivity(new Intent(this, PostQuestion.class));
                 break;
             case R.id.discussion_forum_search_button:
-                MyToast.showShort(this, "Search Clicked");
+//                MyToast.showShort(this, "Search Clicked");
+
+                String s = searchQuestion.getText().toString();
+                if(s.equals("")){
+                    questionsList.clear();
+                    questionsList.addAll(tempQuestionsList);
+                    Log.d(TAG , s.toString());
+                }else{
+                    questionsList.clear();
+                    for(int i =0 ; i<tempQuestionsList.size();i++){
+                        Log.d(TAG , s.toString());
+                        //search in questions & tags
+                        if(tempQuestionsList.get(i).getQuestion().toLowerCase().contains(s.toString().toLowerCase())
+                                || tempQuestionsList.get(i).getTags().toLowerCase().contains(s.toString().toLowerCase())) {
+                            questionsList.add(tempQuestionsList.get(i));
+                            Log.d(TAG , " Name : " +tempQuestionsList.get(i).getQuestion().toLowerCase());
+                        }
+                    }
+                }
+                myAdapter.notifyDataSetChanged();
+
                 break;
         }
     }
@@ -131,6 +155,8 @@ public class DiscussionForum extends Activity implements View.OnClickListener, A
                                     list.getJSONObject(i).getString(Constants.PARAMETER_QUESTION_TAG))
                             );
                         }
+
+                        tempQuestionsList.addAll(questionsList);
 
 //                        myAdapter.notifyDataSetChanged();
 
