@@ -276,13 +276,14 @@ public class DiscussionForum extends Activity implements View.OnClickListener, A
         Log.d(TAG, "clicked question id: " + i);
 
         //increase view count if user is logged in
-        if(session.isLoggedIn()) {
-            new Thread(new Runnable() {
-                public void run() {
-                    increaseViewCount(questionsList.get(i).getId(), questionsList.get(i));
-                }
-            }).start();
-        }
+        //this is now called at the beginning of discussionforumquestion.java
+//        if(session.isLoggedIn()) {
+//            new Thread(new Runnable() {
+//                public void run() {
+//                    increaseViewCount(questionsList.get(i).getId());
+//                }
+//            }).start();
+//        }
 //        else {
 //            MyToast.showLong(getApplicationContext(), "You need to be logged in to increase count");
 //        }
@@ -292,14 +293,14 @@ public class DiscussionForum extends Activity implements View.OnClickListener, A
         startActivity(intent);
     }
 
-    public void increaseViewCount(String question_id , final DiscussionForumQuestion question) {
+    public void increaseViewCount(String question_id) {
         String tag_string_req = "req_increase_view_count";
 
         Map<String, String> params = new HashMap<String, String>();
         params.put(Constants.PARAMETER_VIEWER_EMAIL, session.getUserDetail().getEmail());
 //        Log.d(TAG, "user email: " + session.getUserDetail().getEmail());
         params.put(Constants.PARAMETER_QUESTION_ID, question_id);
-        Log.d(TAG, "sending increase_viewcount with user_email & question_id: "
+        Log.d(TAG, "sending increase_viewcount with viewer_email & question_id: "
                 + session.getUserDetail().getEmail() + ", " + question_id);
 
         JSONObject parameters = new JSONObject(params);

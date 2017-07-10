@@ -60,7 +60,8 @@ public class DiscussionForumQuestion extends Activity implements View.OnClickLis
 
         question =
                 (com.gmpsop.standardoperatingprocedures.Models.DiscussionForumQuestion) getIntent().getSerializableExtra("question");
-        Log.d(TAG, "dfq.java received question tags: " + question.getTags());
+        Log.d(TAG, "dfq.java received question tags, comments, views : "
+                + question.getTags() + ", " + question.getAns() + ", " + question.getViews());
 
         init_components();
     }
@@ -109,6 +110,14 @@ public class DiscussionForumQuestion extends Activity implements View.OnClickLis
         myAdapter = new DiscussionCommentListAdapter(this,R.layout.list_view_discuss_forum_question_comment, commentsList);
         commentsListView.setAdapter(myAdapter);
 
+        //increase view count if user is logged in
+        if(session.isLoggedIn()) {
+            new Thread(new Runnable() {
+                public void run() {
+                    increaseViewCount(question.getId());
+                }
+            }).start();
+        }
 
     }
 
@@ -325,6 +334,54 @@ public class DiscussionForumQuestion extends Activity implements View.OnClickLis
 //                    hideDialog();
             }
         });
+        AppController.getInstance().addToRequestQueue(jsonRequest, tag_string_req);
+    }
+
+    public void increaseViewCount(String question_id) {
+        String tag_string_req = "req_increase_view_count";
+
+        Map<String, String> params = new HashMap<String, String>();
+        params.put(Constants.PARAMETER_VIEWER_EMAIL, session.getUserDetail().getEmail());
+//        Log.d(TAG, "user email: " + session.getUserDetail().getEmail());
+        params.put(Constants.PARAMETER_QUESTION_ID, question_id);
+        Log.d(TAG, "sending increase_viewcount with viewer_email & question_id: "
+                + session.getUserDetail().getEmail() + ", " + question_id);
+
+        JSONObject parameters = new JSONObject(params);
+
+        JsonObjectRequest jsonRequest = new JsonObjectRequest(Request.Method.POST, Constants.QUESTION_VIEWS, parameters, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                //TODO: handle success
+                Log.d(TAG, "increase viewcount Response: " + response.toString());
+
+                try {
+                    int error = response.getInt(Constants.DOCUMENT_RESPONSE_MSG);
+                    if (error == 0) {
+                        Log.d(TAG, "increase viewcount response: " + response.getJSONArray(Constants.DOCUMENT_RESPONSE_DATA));
+
+                    } else {
+                        Log.e(TAG, "Error while increase viewcount");
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                error.printStackTrace();
+                //TODO: handle failure
+                Log.e(TAG, "increase viewcount Error: " + error.getMessage());
+                MyToast.showShort(getApplicationContext(),
+                        error.getMessage());
+//                    hideDialog();
+            }
+        });
+        if(AppController.getInstance() == null) {
+            Log.e(TAG, "instance is null");
+        }
+        Log.e(TAG, jsonRequest.getBody().toString());
         AppController.getInstance().addToRequestQueue(jsonRequest, tag_string_req);
     }
 }

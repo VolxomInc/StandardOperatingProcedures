@@ -80,7 +80,7 @@ public class Constants {
     public static final String PARAMETER_TAGS = "question_tags";
     public static final String PARAMETER_VIEW_COUNT = "view_counts";
     public static final String PARAMETER_VIEWER_EMAIL = "viewer_email";
-    public static final String PARAMETER_COMMENT_COUNT = "comment_counts";
+    public static final String PARAMETER_COMMENT_COUNT = "comments_counts";
     public static final String PARAMETER_COMMENT = "comment";
     public static final String PARAMETER_COMMENTED_BY = "commented_by";
     public static final String PARAMETER_QUESTION_ID = "question_id";
