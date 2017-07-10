@@ -24,10 +24,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6647d93-79ba-4ea4-993c-72321e2c03ee" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Activities/Notifications.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Activities/Notifications.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_notification_center.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_notification_center.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Activities/Dashboard.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Activities/Dashboard.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Activities/DiscussionForumQuestion.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Activities/DiscussionForumQuestion.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Helper/Constants.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Helper/Constants.java" />
     </list>
     <ignored path="StandardOperatingProcedures.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,11 +66,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Notifications.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Notifications.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Activities/Notifications.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+            <state relative-caret-position="265">
+              <caret line="75" column="52" selection-start-line="75" selection-start-column="52" selection-end-line="75" selection-end-column="52" />
               <folding>
                 <marker date="1499688894816" expanded="false" signature="7587:7603" ph="&lt;~&gt;" />
               </folding>
@@ -71,15 +78,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SessionManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Helper/SessionManager.java">
+      <file leaf-file-name="DiscussionForumQuestion.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Activities/DiscussionForumQuestion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+            <state relative-caret-position="312">
+              <caret line="178" column="25" selection-start-line="170" selection-start-column="24" selection-end-line="178" selection-end-column="25" />
               <folding>
-                <element signature="e#2752#2753#0" expanded="true" />
-                <element signature="e#2808#2809#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#6437#8487#0" expanded="true" />
+                <element signature="e#8486#8487#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dashboard.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Activities/Dashboard.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="544" column="83" selection-start-line="544" selection-start-column="83" selection-end-line="544" selection-end-column="83" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Helper/Constants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="301">
+              <caret line="90" column="69" selection-start-line="90" selection-start-column="57" selection-end-line="90" selection-end-column="69" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -109,18 +137,6 @@
               <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="23" selection-end-column="38" />
               <folding>
                 <element signature="e#1347#1368#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NotificationListAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Adapters/NotificationListAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="51" column="47" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2054,22 +2070,22 @@
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/shape_circle_button.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_discussion_forum.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Models/DiscussionForumQuestion.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Activities/DiscussionForumQuestion.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Models/DiscussionForumQuestionComment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_discussion_forum_question.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Activities/Dashboard.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/list_view_discuss_forum_question_comment.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Adapters/DiscussionCommentListAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Activities/PostQuestion.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Helper/Constants.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Activities/DiscussionForum.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/list_view_notification.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Models/NotificationModel.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Adapters/NotificationListAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_notification_center.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Activities/Notifications.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Activities/DiscussionForumQuestion.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Helper/Constants.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Activities/Dashboard.java" />
       </list>
     </option>
   </component>
@@ -2341,7 +2357,7 @@
     <property name="android.sdk.path" value="C:/Android/Sdk" />
     <property name="settings.editor.selected.configurable" value="instant.run" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="device.picker.selection" value="0f4e9015" />
+    <property name="device.picker.selection" value="Nexus_4_API_23_Google" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
@@ -2808,13 +2824,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Activities/Splash.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="23" column="56" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_view_search_gmp_suggestions.xml">
       <provider editor-type-id="android-designer2">
         <state />
@@ -2841,6 +2850,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3195">
           <caret line="213" column="59" selection-start-line="213" selection-start-column="59" selection-end-line="213" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2888,6 +2898,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="328">
           <caret line="53" column="3" selection-start-line="53" selection-start-column="3" selection-end-line="53" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2898,6 +2909,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2908,6 +2920,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2922,6 +2935,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="55" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2929,6 +2943,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2941,6 +2956,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2948,6 +2964,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3020,18 +3037,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Activities/DiscussionForumQuestion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="157" column="81" selection-start-line="157" selection-start-column="81" selection-end-line="157" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6437#8487#0" expanded="true" />
-            <element signature="e#8486#8487#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_discussion_forum.xml">
       <provider editor-type-id="android-designer2">
         <state />
@@ -3039,6 +3044,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
           <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3057,6 +3063,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="91" column="36" selection-start-line="91" selection-start-column="36" selection-end-line="91" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3075,14 +3082,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="99" column="51" selection-start-line="99" selection-start-column="51" selection-end-line="99" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Activities/Dashboard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="276" column="66" selection-start-line="276" selection-start-column="66" selection-end-line="276" selection-end-column="66" />
           <folding />
         </state>
       </provider>
@@ -3122,6 +3121,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
           <caret line="92" column="66" selection-start-line="92" selection-start-column="33" selection-end-line="92" selection-end-column="66" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3136,14 +3136,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99">
           <caret line="46" column="37" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Helper/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="26" column="74" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="74" />
           <folding />
         </state>
       </provider>
@@ -3165,6 +3157,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="47">
           <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="61" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3222,20 +3215,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Activities/PostQuestion.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Activities/Notifications.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-155">
-          <caret line="297" column="4" selection-start-line="297" selection-start-column="4" selection-end-line="297" selection-end-column="4" />
+        <state relative-caret-position="265">
+          <caret line="75" column="52" selection-start-line="75" selection-start-column="52" selection-end-line="75" selection-end-column="52" />
+          <folding>
+            <marker date="1499688894816" expanded="false" signature="7587:7603" ph="&lt;~&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Activities/Splash.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Activities/DiscussionForumQuestion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="178" column="25" selection-start-line="170" selection-start-column="24" selection-end-line="178" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#6437#8487#0" expanded="true" />
+            <element signature="e#8486#8487#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Helper/SessionManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+        <state relative-caret-position="369">
+          <caret line="87" column="16" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
           <folding>
             <element signature="e#2752#2753#0" expanded="true" />
             <element signature="e#2808#2809#0" expanded="true" />
@@ -3243,13 +3256,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Activities/Notifications.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Activities/PostQuestion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+        <state relative-caret-position="279">
+          <caret line="327" column="40" selection-start-line="327" selection-start-column="40" selection-end-line="327" selection-end-column="40" />
           <folding>
-            <marker date="1499688894816" expanded="false" signature="7587:7603" ph="&lt;~&gt;" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Helper/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="90" column="69" selection-start-line="90" selection-start-column="57" selection-end-line="90" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gmpsop/standardoperatingprocedures/Activities/Dashboard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="544" column="83" selection-start-line="544" selection-start-column="83" selection-end-line="544" selection-end-column="83" />
+          <folding />
         </state>
       </provider>
     </entry>

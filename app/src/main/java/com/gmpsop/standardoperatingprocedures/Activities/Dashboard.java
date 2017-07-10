@@ -187,6 +187,10 @@ public class Dashboard extends Activity implements View.OnClickListener {
         if (session.isLoggedIn()) {
             logout.setVisibility(View.VISIBLE);
             loginSignUp.setVisibility(View.GONE);
+
+            //check subscription from server and set it in sharedprefs
+            checkUserSubscription(session.getUserDetail().getEmail());
+
         } else {
             logout.setVisibility(View.GONE);
             loginSignUp.setVisibility(View.VISIBLE);
@@ -509,6 +513,64 @@ public class Dashboard extends Activity implements View.OnClickListener {
                     break;
             }
         }
+    }
+
+
+
+
+    private void checkUserSubscription(final String email) {
+//        pDialog.show();
+        // Tag used to cancel the request
+        String tag_string_req = "req_check_subscription";
+
+        Map<String, String> params = new HashMap<String, String>();
+        params.put(Constants.EMAIL, email);
+//        Log.d(TAG, email);
+
+        JSONObject parameters = new JSONObject(params);
+
+        JsonObjectRequest jsonRequest = new JsonObjectRequest(Request.Method.POST, Constants.GET_USER_STATUS, parameters, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                //TODO: handle success
+                Log.d(TAG, "check_subscription Response: " + response.toString());
+
+                try {
+                    int resMsg = response.getInt(Constants.DOCUMENT_RESPONSE_MSG);
+                    if (resMsg == 0) {
+
+                        JSONObject data = response.getJSONObject(Constants.DOCUMENT_RESPONSE_DATA);
+                        String userSubscription = data.getString(Constants.PARAMETER_SUBSCRIPTION);
+
+                        session.setSubsription(Integer.parseInt(userSubscription));
+//                        MyToast.showLong(getApplicationContext(), logoutResponse.get(resMsg));
+                        // Launch login activity
+//                        logoutSession();
+                    } else {
+                        Log.e(TAG, "check_subscription error");
+//                        MyToast.showLong(getApplicationContext(),
+//                                logoutResponse.get(resMsg));
+                    }
+                } catch (JSONException e) {
+//                    MyToast.showLong(getApplicationContext(),
+//                            logoutResponse.get(1));
+                    e.printStackTrace();
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+//                pDialog.dismiss();
+                error.printStackTrace();
+                //TODO: handle failure
+                Log.e(TAG, "check_subscription Error: " + error.getMessage());
+//                MyToast.showLong(getApplicationContext(),
+//                        logoutResponse.get(1));
+//                    hideDialog();
+            }
+        });
+        AppController.getInstance().addToRequestQueue(jsonRequest, tag_string_req);
+
     }
 
 }
