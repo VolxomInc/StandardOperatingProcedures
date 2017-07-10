@@ -176,12 +176,12 @@ public class Notifications extends Activity implements View.OnClickListener{
 
 
 
-//    public void postComment() {
+//    public void setNotificationRead(int i1) {
 //        String tag_string_req = "req_post_comment";
 //
 //        Map<String, String> params = new HashMap<String, String>();
-//        params.put(Constants.PARAMETER_QUESTION_ID, question.getId());
-//        params.put(Constants.PARAMETER_COMMENT, commentEditText.getText().toString());
+//        params.put(Constants.PARAMETER_COMMENT,notificationsList.get(i1).);
+//        params.put(Constants.PARAMETER_STATUS, String.valueOf(0));
 //        params.put(Constants.PARAMETER_COMMENTED_BY, session.getUserDetail().getEmail());
 //        Log.e(TAG, "post comment: " + question.getId() + ", " + commentEditText.getText().toString() + ", "
 //        + session.getUserDetail().getEmail());
@@ -236,9 +236,14 @@ public class Notifications extends Activity implements View.OnClickListener{
         if (session.isLoggedIn()) {
 //            logoutPost.setVisibility(View.VISIBLE);
             loginCreateAcc.setVisibility(GONE);
+
         } else {
 //            logoutPost.setVisibility(GONE);
             loginCreateAcc.setVisibility(View.VISIBLE);
+
+            //hide listview if not logged in
+//            noNotificationsTextView.setVisibility(View.VISIBLE);
+            notificationsListView.setVisibility(GONE);
         }
 
 //        myAdapter.notifyDataSetChanged();

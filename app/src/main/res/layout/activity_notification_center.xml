@@ -10,14 +10,16 @@
     android:orientation="vertical"
     tools:context="com.gmpsop.standardoperatingprocedures.Activities.DiscussionForum">
 
-    <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView
+    <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextViewBold
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
         android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="20dp"
         android:text="@string/dashboard_notifications"
+        android:textAlignment="center"
         android:textColor="@color/colorPrimary"
-        android:textSize="16sp" />
+        android:textSize="24sp" />
 
     <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView
         android:id="@+id/no_notifications"
