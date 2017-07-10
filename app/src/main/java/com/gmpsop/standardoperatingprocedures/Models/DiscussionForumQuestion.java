@@ -9,14 +9,16 @@ import java.io.Serializable;
 public class DiscussionForumQuestion implements Serializable{
 
     String id;
+    String title;
     String question;
     String ans;
     String views;
     String tags;
 
 
-    public DiscussionForumQuestion(String id, String question, String ans, String views, String tags) {
+    public DiscussionForumQuestion(String id, String title, String question, String ans, String views, String tags) {
         this.id = id;
+        this.title = title;
         this.question = question;
         this.ans = ans;
         this.views = views;
@@ -30,6 +32,14 @@ public class DiscussionForumQuestion implements Serializable{
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getQuestion() {

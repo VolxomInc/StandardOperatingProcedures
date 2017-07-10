@@ -150,6 +150,7 @@ public class DiscussionForum extends Activity implements View.OnClickListener, A
                             questionsList.add(new DiscussionForumQuestion(
                                     list.getJSONObject(i).getString(Constants.PARAMETER_ID),
                                     list.getJSONObject(i).getString(Constants.PARAMETER_TITLE),
+                                    list.getJSONObject(i).getString(Constants.PARAMETER_DETAIL),
                                     list.getJSONObject(i).getString(Constants.PARAMETER_COMMENT_COUNT),
                                     list.getJSONObject(i).getString(Constants.PARAMETER_VIEW_COUNT),
                                     list.getJSONObject(i).getString(Constants.PARAMETER_QUESTION_TAG))

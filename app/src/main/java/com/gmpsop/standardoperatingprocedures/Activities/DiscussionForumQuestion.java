@@ -38,7 +38,7 @@ import static com.gmpsop.standardoperatingprocedures.AppController.TAG;
 public class DiscussionForumQuestion extends Activity implements View.OnClickListener{
 
     TextView questionTextView, questionAnswerCountTextView, questionViewCountTextView,
-            questionTagsTextView, noCommentsTextView;
+            questionTagsTextView, noCommentsTextView, questionDetailTextView;
     EditText commentEditText;
 //    EditText searchQuestion;
     RelativeLayout postComment, search;
@@ -84,6 +84,9 @@ public class DiscussionForumQuestion extends Activity implements View.OnClickLis
         questionTextView = (TextView) findViewById(R.id.discussion_forum_question);
         questionTextView.setText(question.getQuestion());
 
+        questionDetailTextView = (TextView) findViewById(R.id.question_detail);
+        questionDetailTextView.setText(question.getQuestion());
+
         questionAnswerCountTextView = (TextView) findViewById(R.id.question_answer_count);
         questionAnswerCountTextView.setText(question.getAns());
 
@@ -105,6 +108,7 @@ public class DiscussionForumQuestion extends Activity implements View.OnClickLis
         pDialog.setMessage("Pulling Comments...");
         pDialog.setCancelable(false);
         pDialog.show();
+        pullSingleQuestion();
         pullComments();
 
         myAdapter = new DiscussionCommentListAdapter(this,R.layout.list_view_discuss_forum_question_comment, commentsList);
@@ -214,6 +218,73 @@ public class DiscussionForumQuestion extends Activity implements View.OnClickLis
 //                MyToast.showShort(getApplicationContext(),
 //                        error.getMessage());
                     pDialog.dismiss();
+            }
+        });
+        AppController.getInstance().addToRequestQueue(jsonRequest, tag_string_req);
+    }
+
+    public void pullSingleQuestion() {
+        String tag_string_req = "req_single_question";
+
+        Map<String, String> params = new HashMap<String, String>();
+        params.put(Constants.PARAMETER_QUESTION_ID, question.getId());
+        JSONObject parameters = new JSONObject(params);
+
+        JsonObjectRequest jsonRequest = new JsonObjectRequest(Request.Method.POST, Constants.GET_SINGLE_QUESTION, parameters, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                //TODO: handle success
+                Log.d(TAG, "single_question Response: " + response.toString());
+//                pDialog.dismiss();
+
+                try {
+                    int error = response.getInt(Constants.DOCUMENT_RESPONSE_MSG);
+                    if (error == 0) {
+//                        MyToast.showLong(getApplicationContext(), "single_question pulled successfully");
+                        Log.d(TAG, "single_question response: " + response.getJSONArray(Constants.DOCUMENT_RESPONSE_DATA));
+
+                        JSONArray list = response.getJSONArray(Constants.DOCUMENT_RESPONSE_DATA);
+                        JSONObject data = list.getJSONObject(0);
+
+                        //update question data from webservice
+                        question.setAns(data.getString(Constants.PARAMETER_COMMENT_COUNT));
+                        question.setViews(data.getString(Constants.PARAMETER_VIEW_COUNT));
+
+                        //if we need to re-generate question from remote source
+//                        question = new com.gmpsop.standardoperatingprocedures.Models.DiscussionForumQuestion(
+//                                data.getString(Constants.PARAMETER_ID),
+//                                data.getString(Constants.PARAMETER_TITLE),
+//                                data.getString(Constants.PARAMETER_DETAIL),
+//                                data.getString(Constants.PARAMETER_COMMENT_COUNT),
+//                                data.getString(Constants.PARAMETER_VIEW_COUNT),
+//                                data.getString(Constants.PARAMETER_TAGS)
+//                        );
+
+                        //update views with this data
+                        questionAnswerCountTextView.setText(question.getAns());
+                        questionViewCountTextView.setText(question.getViews());
+
+                    } else {
+//                        MyToast.showLong(getApplicationContext(),
+//                                "Error pulling comments or no comments");
+                        Log.e(TAG, "Error while pulling single_question");
+
+                        noCommentsTextView.setVisibility(View.VISIBLE);
+                        commentsListView.setVisibility(GONE);
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                error.printStackTrace();
+                //TODO: handle failure
+                Log.e(TAG, "single_question Error: " + error.getMessage());
+//                MyToast.showShort(getApplicationContext(),
+//                        error.getMessage());
+//                pDialog.dismiss();
             }
         });
         AppController.getInstance().addToRequestQueue(jsonRequest, tag_string_req);
