@@ -1,51 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listViewNotificationLayout"
     android:orientation="vertical" android:layout_width="match_parent"
     android:background="@color/transparent"
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_height="30dp"
-        android:gravity="center_vertical"
-        android:weightSum="1">
-
-
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="3dp">
         <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView
-            android:id="@+id/listViewNotificationDate"
-            android:layout_weight="1"
-            android:layout_width="0dp"
+            android:id="@+id/listViewNotificationText"
+            android:layout_width="match_parent"
+            android:singleLine="false"
             android:layout_height="wrap_content"
-            android:text="Notification date"
+            android:text="Notification text"
             android:textColor="@color/colorPrimary"
-            android:textSize="12sp"/>
+            android:textSize="14sp"/>
 
     </LinearLayout>
 
 
     <LinearLayout
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="10dp"
         android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_height="30dp"
-        android:gravity="center_vertical"
-        android:weightSum="1">
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingStart="3dp">
 
 
-        <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextViewBold
-            android:id="@+id/listViewNotificationText"
-            android:layout_weight="1"
-            android:layout_width="0dp"
+        <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView
+            android:id="@+id/listViewNotificationDate"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Notification text"
-            android:textColor="@color/colorPrimary"
-            android:textSize="12sp"/>
+            android:layout_weight="1"
+            android:text="Notification date"
+            android:textColor="@color/sloganColorBlack"
+            android:textSize="10sp" />
+
 
     </LinearLayout>
 

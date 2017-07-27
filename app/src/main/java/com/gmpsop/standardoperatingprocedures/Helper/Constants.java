@@ -6,7 +6,7 @@ package com.gmpsop.standardoperatingprocedures.Helper;
 
 public class Constants {
 
-    public static final String BASE_URL = "http://volxom.com/projects/gmpsop/admin/";
+    public static final String BASE_URL = "http://gmp-network.com/api/";
     public static final String REGISTER_URL = BASE_URL + "register_data";
     public static final String LOGIN_URL = BASE_URL + "login_data";
     public static final String FORGOT_PASSWORD_URL = BASE_URL + "forgot_pwd";
@@ -84,10 +84,15 @@ public class Constants {
     public static final String PARAMETER_COMMENT_COUNT = "comments_counts";
     public static final String PARAMETER_COMMENT = "comment";
     public static final String PARAMETER_COMMENTED_BY = "commented_by";
+    public static final String PARAMETER_COMMENTED_NAME = "commented_name";
+    public static final String PARAMETER_COMMENTED_TIME = "comment_date";
     public static final String PARAMETER_QUESTION_ID = "question_id";
     public static final String PARAMETER_QUESTION_TAG = "question_tags";
+    public static final String PARAMETER_NOTIFICATION_ID = "id";
     public static final String PARAMETER_NOTIFICATION_TEXT = "notification_text";
-    public static final String PARAMETER_STATUS = "status";
+    public static final String PARAMETER_NOTIFICATION_TIME = "notification_date";
+    public static final String PARAMETER_STATUS_RECEIVING = "receiving_status";
+    public static final String PARAMETER_STATUS_READING = "reading_status";
     public static final String PARAMETER_NOTIFICATION_DATE = "notification_date";
     public static final String PARAMETER_SUBSCRIPTION = "subscription";
 

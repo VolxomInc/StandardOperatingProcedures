@@ -97,6 +97,7 @@ public class SearchGMP extends Activity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_gmp);
         init_components();
+        regulatory_list();
         setMHelper();
         termRegulatory.setAdapter(regulatoryAdapter);
         termRegulatory.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -131,7 +132,7 @@ public class SearchGMP extends Activity implements View.OnClickListener {
 
     @Override
     protected void onResume() {
-        regulatory_list();
+
         super.onResume();
 
     }
@@ -529,6 +530,7 @@ public class SearchGMP extends Activity implements View.OnClickListener {
             MyToast.showLong(this, getString(R.string.noInternetConnection));
             return;
         }
+        regulatoryFiles.clear();
         String tag_string_req = "req_register";
 
         JsonObjectRequest jsonRequest = new JsonObjectRequest(Request.Method.POST, Constants.REGULATORY_LIST, null, new Response.Listener<JSONObject>() {

@@ -6,18 +6,53 @@ package com.gmpsop.standardoperatingprocedures.Models;
 
 public class NotificationModel {
 
+    int id;
     String notification_text;
-//    String notification_date;
+    int receiving_status;
+    long notification_date;
     String email;
-    int status;
+    int reading_status;
 
+    public long getNotification_date() {
+        return notification_date;
+    }
 
-//    String notification_date,
-    public NotificationModel(String notification_text, String email, int status) {
+    public void setNotification_date(long notification_date) {
+        this.notification_date = notification_date;
+    }
+
+    //    String notification_date,
+    public NotificationModel(int id , String notification_text,long notification_date , String email, int reading_status , int receiving_status) {
+        this.id = id;
         this.notification_text = notification_text;
-//        this.notification_date = notification_date;
+        this.notification_date = notification_date;
         this.email = email;
-        this.status = status;
+        this.reading_status = reading_status;
+        this.receiving_status = receiving_status;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getReceiving_status() {
+        return receiving_status;
+    }
+
+    public void setReceiving_status(int receiving_status) {
+        this.receiving_status = receiving_status;
+    }
+
+    public int getReading_status() {
+        return reading_status;
+    }
+
+    public void setReading_status(int reading_status) {
+        this.reading_status = reading_status;
     }
 
     public String getNotificationText() {
@@ -28,14 +63,6 @@ public class NotificationModel {
         this.notification_text = notification_text;
     }
 
-//    public String getNotificationDate() {
-//        return notification_date;
-//    }
-//
-//    public void setNotificationDate(String notification_date) {
-//        this.notification_date = notification_date;
-//    }
-
     public String getEmail() {
         return email;
     }
@@ -44,13 +71,6 @@ public class NotificationModel {
         this.email = email;
     }
 
-    public int getStatus() {
-        return status;
-    }
-
-    public void setStatus(int status) {
-        this.status = status;
-    }
 }
 
 

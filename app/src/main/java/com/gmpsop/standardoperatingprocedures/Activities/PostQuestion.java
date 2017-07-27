@@ -91,7 +91,7 @@ public class PostQuestion extends Activity implements View.OnClickListener {
         logoutPost = (LinearLayout) findViewById(R.id.post_question_logoutLayout);
         loginButton = (RelativeLayout) findViewById(R.id.post_question_LoginButton);
         loginButton.setOnClickListener(this);
-        createAccountButton = (RelativeLayout) findViewById(R.id.post_question_SignUpButton);
+        createAccountButton = (RelativeLayout) findViewById(R.id.discussion_forum_question_SignUpButton);
         loginButton.setOnClickListener(this);
         postButton = (RelativeLayout) findViewById(R.id.post_question_button);
         postButton.setOnClickListener(this);
@@ -145,13 +145,15 @@ public class PostQuestion extends Activity implements View.OnClickListener {
             questionDetail.setError("Please Enter question Detail");
             return;
         }
-        if (questionTags.getTags().size() < 2) {
-            questionTags.setError("Please Enter at least two(2) tags");
-            return;
-        }
         pDialog.show();
+        if (questionTags.getText().toString().isEmpty()) {
+            postQuestion(questionTitle.getText().toString(), questionDetail.getText().toString(),"", session.getUserDetail().getEmail());
+        }else{
+            postQuestion(questionTitle.getText().toString(), questionDetail.getText().toString(), TextUtils.substring(string_format(questionTags.getTags()), 1, string_format(questionTags.getTags()).length()), session.getUserDetail().getEmail());
 
-        postQuestion(questionTitle.getText().toString(), questionDetail.getText().toString(), TextUtils.substring(string_format(questionTags.getTags()), 1, string_format(questionTags.getTags()).length()), session.getUserDetail().getEmail());
+        }
+
+
 
         /*tags.add("hello");
         */
@@ -169,6 +171,11 @@ public class PostQuestion extends Activity implements View.OnClickListener {
     }
 
     public void postQuestion(String title, String detail, String tags, String senderEmail) {
+        if (!InternetOperations.isNetworkConnected(this)) {
+            MyToast.showLong(this, getString(R.string.noInternetConnection));
+            pDialog.dismiss();
+            return;
+        }
         String tag_string_req = "req_register";
 
         Map<String, String> params = new HashMap<String, String>();
@@ -207,6 +214,7 @@ public class PostQuestion extends Activity implements View.OnClickListener {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+                pDialog.dismiss();
                 error.printStackTrace();
                 //TODO: handle failure
                 Log.e(TAG, "Registration Error: " + error.getMessage());
@@ -282,7 +290,7 @@ public class PostQuestion extends Activity implements View.OnClickListener {
                     MyToast.showShort(this, "You are already loggedIn");
                 }
                 break;
-            case R.id.post_question_SignUpButton:
+            case R.id.discussion_forum_question_SignUpButton:
                 Intent signUpIntent = new Intent(this,
                         SignUpMembers.class);
                 startActivity(signUpIntent);
@@ -293,18 +301,25 @@ public class PostQuestion extends Activity implements View.OnClickListener {
         }
     }
 
-
+    @Override
+    public void onBackPressed() {
+        Intent dashBoardIntent = new Intent(this,
+                Dashboard.class);
+        startActivity(dashBoardIntent);
+        super.onBackPressed();
+    }
 
     public void insertNotification() {
+        if (!InternetOperations.isNetworkConnected(this)) {
+            MyToast.showLong(this, getString(R.string.noInternetConnection));
+            return;
+        }
         String tag_string_req = "req_insert_notification";
 
 //        1- notification_text 2- email 3- notification_date 4- status
         Map<String, String> params = new HashMap<String, String>();
         params.put(Constants.PARAMETER_NOTIFICATION_TEXT, "You have successfully posted a question in Community Forum.");
         params.put(Constants.PARAMETER_EMAIL, session.getUserDetail().getEmail());
-        long unixTime = System.currentTimeMillis() / 1000L;
-        params.put(Constants.PARAMETER_NOTIFICATION_DATE, String.valueOf(unixTime));
-        params.put(Constants.PARAMETER_STATUS, String.valueOf(0));
 
         JSONObject parameters = new JSONObject(params);
 

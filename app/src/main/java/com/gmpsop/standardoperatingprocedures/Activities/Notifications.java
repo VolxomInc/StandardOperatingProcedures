@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
@@ -35,63 +36,82 @@ import java.util.Map;
 import static android.view.View.GONE;
 import static com.gmpsop.standardoperatingprocedures.AppController.TAG;
 
-public class Notifications extends Activity implements View.OnClickListener{
+public class Notifications extends Activity implements View.OnClickListener {
 
-    TextView questionTextView, questionAnswerCountTextView, questionViewCountTextView,
-            questionTagsTextView, noNotificationsTextView;
-//    EditText commentEditText;
-//    EditText searchQuestion;
-    RelativeLayout postComment, search;
+    TextView noNotificationsTextView;
     ListView notificationsListView;
     NotificationListAdapter myAdapter;
     ArrayList<NotificationModel> notificationsList = new ArrayList<>();
-//    com.gmpsop.standardoperatingprocedures.Models.DiscussionForumQuestion question;
 
     private SessionManager session;
     private ProgressDialog pDialog;
 
-    LinearLayout loginCreateAcc, logoutPost;
+    LinearLayout loginCreateAcc;
     RelativeLayout loginButton, createAccountButton;
+
+    int notification_id;
+    String notification_text;
+    long notification_time;
+    String email;
+    int status_reading;
+    int status_receiving;
+
+    LinearLayout errorLayout;
+    ImageView errorImageView;
+    TextView errorTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notification_center);
         init_components();
+        if (session.isLoggedIn()) {
+            pDialog.show();
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    while (true) {
+                        pullNotifications();
+                        try {
+                            Thread.sleep(10000);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+            }).start();
+
+            //startService(new Intent(this, NotificationChecking.class).putExtra(Constants.EMAIL, session.getUserDetail().getEmail()));
+        }
     }
 
     public void init_components() {
-
         session = new SessionManager(getApplicationContext());
-
-        //copied from post - ignore naming
+        errorLayout = (LinearLayout) findViewById(R.id.documentReaderErrorLayout);
+        errorImageView = (ImageView) findViewById(R.id.documentReaderErrorImage);
+        errorTextView = (TextView) findViewById(R.id.documentReaderErrorMsg);
         loginCreateAcc = (LinearLayout) findViewById(R.id.post_question_loginSignUpLayout);
-//        logoutPost = (LinearLayout) findViewById(R.id.post_question_logoutLayout);
         loginButton = (RelativeLayout) findViewById(R.id.post_question_LoginButton);
         loginButton.setOnClickListener(this);
-        createAccountButton = (RelativeLayout) findViewById(R.id.post_question_SignUpButton);
+        createAccountButton = (RelativeLayout) findViewById(R.id.discussion_forum_question_SignUpButton);
         createAccountButton.setOnClickListener(this);
-
         noNotificationsTextView = (TextView) findViewById(R.id.no_notifications);
         noNotificationsTextView.setVisibility(GONE);
-
         notificationsListView = (ListView) findViewById(R.id.notifications_list);
-
         pDialog = new ProgressDialog(this);
         pDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         pDialog.setMessage("Pulling Notifications...");
         pDialog.setCancelable(false);
-        pDialog.show();
-        pullNotifications();
+
 
         //build notification model + hook it up
-        myAdapter = new NotificationListAdapter(this,R.layout.list_view_notification, notificationsList);
+        myAdapter = new NotificationListAdapter(this, R.layout.list_view_notification, notificationsList);
         notificationsListView.setAdapter(myAdapter);
     }
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.post_question_LoginButton:
                 if (!session.isLoggedIn()) {
                     Intent loginIntent = new Intent(this,
@@ -103,7 +123,7 @@ public class Notifications extends Activity implements View.OnClickListener{
                     MyToast.showShort(this, "You are already loggedIn");
                 }
                 break;
-            case R.id.post_question_SignUpButton:
+            case R.id.discussion_forum_question_SignUpButton:
                 Intent signUpIntent = new Intent(this,
                         SignUpMembers.class);
                 startActivity(signUpIntent);
@@ -123,27 +143,39 @@ public class Notifications extends Activity implements View.OnClickListener{
             @Override
             public void onResponse(JSONObject response) {
                 //TODO: handle success
-                Log.d(TAG, "notifications Response: " + response.toString());
+                Log.d(TAG, "notifications Response a: " + response.toString());
                 pDialog.dismiss();
-
                 try {
                     int error = response.getInt(Constants.DOCUMENT_RESPONSE_MSG);
                     if (error == 0) {
-                        MyToast.showLong(getApplicationContext(), "notifications pulled successfully");
-                        Log.d(TAG, "notifications response: " + response.getJSONArray(Constants.DOCUMENT_RESPONSE_DATA));
-
+                        notificationsList.clear();
+                        Log.d(TAG, "notifications response a: " + response.getJSONArray(Constants.DOCUMENT_RESPONSE_DATA));
                         //add values to adapter
                         JSONArray list = response.getJSONArray(Constants.DOCUMENT_RESPONSE_DATA);
                         for (int i = 0; i < list.length(); i++) {
+                            status_receiving = Integer.parseInt(list.getJSONObject(i).getString(Constants.PARAMETER_STATUS_RECEIVING));
+                            status_reading = Integer.parseInt(list.getJSONObject(i).getString(Constants.PARAMETER_STATUS_READING));
+                            email = list.getJSONObject(i).getString(Constants.PARAMETER_EMAIL);
+                            notification_time = Long.parseLong(list.getJSONObject(i).getString(Constants.PARAMETER_NOTIFICATION_TIME));
+                            notification_text = list.getJSONObject(i).getString(Constants.PARAMETER_NOTIFICATION_TEXT);
+                            notification_id = Integer.parseInt(list.getJSONObject(i).getString(Constants.PARAMETER_NOTIFICATION_ID));
+
                             notificationsList.add(new NotificationModel(
-                                    list.getJSONObject(i).getString(Constants.PARAMETER_NOTIFICATION_TEXT),
-                                    list.getJSONObject(i).getString(Constants.PARAMETER_EMAIL) ,
-                                    list.getJSONObject(i).getInt(Constants.PARAMETER_STATUS))
+                                    notification_id,
+                                    notification_text,
+                                    notification_time,
+                                    email,
+                                    status_reading,
+                                    status_receiving)
                             );
                         }
-
-                        noNotificationsTextView.setVisibility(View.GONE);
-                        notificationsListView.setVisibility(View.VISIBLE);
+                        if (notificationsList.size() == 0) {
+                            noNotificationsTextView.setVisibility(View.VISIBLE);
+                            notificationsListView.setVisibility(GONE);
+                        } else {
+                            noNotificationsTextView.setVisibility(View.GONE);
+                            notificationsListView.setVisibility(View.VISIBLE);
+                        }
 
                         myAdapter.notifyDataSetChanged();
 
@@ -168,12 +200,11 @@ public class Notifications extends Activity implements View.OnClickListener{
                 Log.e(TAG, "pulling notifications Error: " + error.getMessage());
 //                MyToast.showShort(getApplicationContext(),
 //                        error.getMessage());
-                    pDialog.dismiss();
+                pDialog.dismiss();
             }
         });
         AppController.getInstance().addToRequestQueue(jsonRequest, tag_string_req);
     }
-
 
 
 //    public void setNotificationRead(int i1) {

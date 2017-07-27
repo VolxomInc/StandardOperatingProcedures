@@ -14,17 +14,26 @@ public class DiscussionForumQuestion implements Serializable{
     String ans;
     String views;
     String tags;
+    String questionBy;
 
 
-    public DiscussionForumQuestion(String id, String title, String question, String ans, String views, String tags) {
+    public DiscussionForumQuestion(String id, String title, String question,String questionBy, String ans, String views, String tags) {
         this.id = id;
         this.title = title;
         this.question = question;
+        this.questionBy = questionBy;
         this.ans = ans;
         this.views = views;
         this.tags = tags;
     }
 
+    public String getQuestionBy() {
+        return questionBy;
+    }
+
+    public void setQuestionBy(String questionBy) {
+        this.questionBy = questionBy;
+    }
 
     public String getId() {
         return id;

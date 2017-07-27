@@ -19,6 +19,7 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.gmpsop.standardoperatingprocedures.Adapters.DiscussionQuestionListAdapter;
 import com.gmpsop.standardoperatingprocedures.AppController;
 import com.gmpsop.standardoperatingprocedures.Helper.Constants;
+import com.gmpsop.standardoperatingprocedures.Helper.InternetOperations;
 import com.gmpsop.standardoperatingprocedures.Helper.MyToast;
 import com.gmpsop.standardoperatingprocedures.Helper.SessionManager;
 import com.gmpsop.standardoperatingprocedures.Models.DiscussionForumQuestion;
@@ -41,11 +42,11 @@ public class DiscussionForum extends Activity implements View.OnClickListener, A
     ListView questionsListView;
     DiscussionQuestionListAdapter myAdapter;
     ArrayList<DiscussionForumQuestion> questionsList = new ArrayList<>();
-    ArrayList<DiscussionForumQuestion>  tempQuestionsList = new ArrayList<>();
+    ArrayList<DiscussionForumQuestion> tempQuestionsList = new ArrayList<>();
 
     //pagination
     public int TOTAL_LIST_ITEMS = 80;
-    public int NUM_ITEMS_PAGE   = 8;
+    public int NUM_ITEMS_PAGE = 8;
     private int noOfBtns;
     private Button[] btns;
     private SessionManager session;
@@ -55,6 +56,7 @@ public class DiscussionForum extends Activity implements View.OnClickListener, A
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_discussion_forum);
         init_components();
+        pullQuestions();
     }
 
     public void init_components() {
@@ -73,8 +75,8 @@ public class DiscussionForum extends Activity implements View.OnClickListener, A
         questionsListView.setOnItemClickListener(this);
 
 //        populateDummyList();
-        pullQuestions();
-        myAdapter = new DiscussionQuestionListAdapter(this,R.layout.list_view_discuss_forum_questionf, questionsList);
+
+        myAdapter = new DiscussionQuestionListAdapter(this, R.layout.list_view_discuss_forum_questionf, questionsList);
         questionsListView.setAdapter(myAdapter);
 
         //search functionality
@@ -82,7 +84,13 @@ public class DiscussionForum extends Activity implements View.OnClickListener, A
 
     }
 
-    public void populateDummyList(){
+    @Override
+    protected void onResume() {
+        pullQuestions();
+        super.onResume();
+    }
+
+    public void populateDummyList() {
         questionsList.clear();
 //        questionsList.add(new DiscussionForumQuestion("I have some problem with SignUp?","2 Answers" , "2 Views"));
 //        questionsList.add(new DiscussionForumQuestion("I have some problem with SignUp?","2 Answers" , "2 Views"));
@@ -94,7 +102,7 @@ public class DiscussionForum extends Activity implements View.OnClickListener, A
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.discussion_forum_post_question_button:
                 startActivity(new Intent(this, PostQuestion.class));
                 break;
@@ -102,19 +110,19 @@ public class DiscussionForum extends Activity implements View.OnClickListener, A
 //                MyToast.showShort(this, "Search Clicked");
 
                 String s = searchQuestion.getText().toString();
-                if(s.equals("")){
+                if (s.equals("")) {
                     questionsList.clear();
                     questionsList.addAll(tempQuestionsList);
-                    Log.d(TAG , s.toString());
-                }else{
+                    Log.d(TAG, s.toString());
+                } else {
                     questionsList.clear();
-                    for(int i =0 ; i<tempQuestionsList.size();i++){
-                        Log.d(TAG , s.toString());
+                    for (int i = 0; i < tempQuestionsList.size(); i++) {
+                        Log.d(TAG, s.toString());
                         //search in questions & tags
-                        if(tempQuestionsList.get(i).getQuestion().toLowerCase().contains(s.toString().toLowerCase())
+                        if (tempQuestionsList.get(i).getQuestion().toLowerCase().contains(s.toString().toLowerCase())
                                 || tempQuestionsList.get(i).getTags().toLowerCase().contains(s.toString().toLowerCase())) {
                             questionsList.add(tempQuestionsList.get(i));
-                            Log.d(TAG , " Name : " +tempQuestionsList.get(i).getQuestion().toLowerCase());
+                            Log.d(TAG, " Name : " + tempQuestionsList.get(i).getQuestion().toLowerCase());
                         }
                     }
                 }
@@ -125,6 +133,10 @@ public class DiscussionForum extends Activity implements View.OnClickListener, A
     }
 
     public void pullQuestions() {
+        if (!InternetOperations.isNetworkConnected(this)) {
+            MyToast.showLong(this, getString(R.string.noInternetConnection));
+            return;
+        }
         String tag_string_req = "req_pull_questions";
 
         Map<String, String> params = new HashMap<String, String>();
@@ -141,7 +153,7 @@ public class DiscussionForum extends Activity implements View.OnClickListener, A
                 try {
                     int error = response.getInt(Constants.DOCUMENT_RESPONSE_MSG);
                     if (error == 0) {
-                        MyToast.showLong(getApplicationContext(), "Questions pulled successfully");
+                        questionsList.clear();
                         Log.d(TAG, "questions response: " + response.getJSONArray(Constants.DOCUMENT_RESPONSE_DATA));
 
                         //add values to adapter
@@ -151,6 +163,7 @@ public class DiscussionForum extends Activity implements View.OnClickListener, A
                                     list.getJSONObject(i).getString(Constants.PARAMETER_ID),
                                     list.getJSONObject(i).getString(Constants.PARAMETER_TITLE),
                                     list.getJSONObject(i).getString(Constants.PARAMETER_DETAIL),
+                                    list.getJSONObject(i).getString(Constants.PARAMETER_SENDER_ID),
                                     list.getJSONObject(i).getString(Constants.PARAMETER_COMMENT_COUNT),
                                     list.getJSONObject(i).getString(Constants.PARAMETER_VIEW_COUNT),
                                     list.getJSONObject(i).getString(Constants.PARAMETER_QUESTION_TAG))
@@ -167,10 +180,7 @@ public class DiscussionForum extends Activity implements View.OnClickListener, A
                         CheckBtnBackGroud(0);
 
 
-
                     } else {
-                        MyToast.showLong(getApplicationContext(),
-                                "Error while pulling questions");
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -192,21 +202,19 @@ public class DiscussionForum extends Activity implements View.OnClickListener, A
 
 
     //pagination
-    private void Btnfooter()
-    {
-        int val = TOTAL_LIST_ITEMS%NUM_ITEMS_PAGE;
-        val = val==0?0:1;
-        noOfBtns=TOTAL_LIST_ITEMS/NUM_ITEMS_PAGE+val;
+    private void Btnfooter() {
+        int val = TOTAL_LIST_ITEMS % NUM_ITEMS_PAGE;
+        val = val == 0 ? 0 : 1;
+        noOfBtns = TOTAL_LIST_ITEMS / NUM_ITEMS_PAGE + val;
 
-        LinearLayout ll = (LinearLayout)findViewById(R.id.btnLay);
+        LinearLayout ll = (LinearLayout) findViewById(R.id.btnLay);
 
         btns = new Button[noOfBtns];
 
-        for(int i=0;i<noOfBtns;i++)
-        {
+        for (int i = 0; i < noOfBtns; i++) {
             btns[i] = new Button(this);
             btns[i].setBackgroundColor(getResources().getColor(android.R.color.transparent));
-            btns[i].setText(""+(i+1));
+            btns[i].setText("" + (i + 1));
 
             LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
             ll.addView(btns[i], lp);
@@ -214,8 +222,7 @@ public class DiscussionForum extends Activity implements View.OnClickListener, A
             final int j = i;
             btns[j].setOnClickListener(new View.OnClickListener() {
 
-                public void onClick(View v)
-                {
+                public void onClick(View v) {
                     loadList(j);
                     CheckBtnBackGroud(j);
                 }
@@ -227,19 +234,14 @@ public class DiscussionForum extends Activity implements View.OnClickListener, A
     /**
      * Method for Checking Button Backgrounds
      */
-    private void CheckBtnBackGroud(int index)
-    {
+    private void CheckBtnBackGroud(int index) {
 //        title.setText("Page "+(index+1)+" of "+noOfBtns);
-        for(int i=0;i<noOfBtns;i++)
-        {
-            if(i==index)
-            {
+        for (int i = 0; i < noOfBtns; i++) {
+            if (i == index) {
                 btns[index].setBackgroundDrawable(getResources().getDrawable(R.drawable.shape_circle_button));
                 btns[i].setTextColor(getResources().getColor(android.R.color.white));
 //                btns[i].setTextSize(8);
-            }
-            else
-            {
+            } else {
                 btns[i].setBackgroundColor(getResources().getColor(android.R.color.transparent));
                 btns[i].setTextColor(getResources().getColor(R.color.input_field_background));
 //                btns[i].setTextSize(6);
@@ -250,21 +252,17 @@ public class DiscussionForum extends Activity implements View.OnClickListener, A
 
     /**
      * Method for loading data in listview
+     *
      * @param number
      */
-    private void loadList(int number)
-    {
+    private void loadList(int number) {
         ArrayList<DiscussionForumQuestion> sort = new ArrayList<DiscussionForumQuestion>();
 
         int start = number * NUM_ITEMS_PAGE;
-        for(int i=start;i<(start)+NUM_ITEMS_PAGE;i++)
-        {
-            if(i<questionsList.size())
-            {
+        for (int i = start; i < (start) + NUM_ITEMS_PAGE; i++) {
+            if (i < questionsList.size()) {
                 sort.add(questionsList.get(i));
-            }
-            else
-            {
+            } else {
                 break;
             }
         }
@@ -275,7 +273,10 @@ public class DiscussionForum extends Activity implements View.OnClickListener, A
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, final int i, long l) {
         Log.d(TAG, "clicked question id: " + i);
-
+        if (!InternetOperations.isNetworkConnected(this)) {
+            MyToast.showLong(this, getString(R.string.noInternetConnection));
+            return;
+        }
         //increase view count if user is logged in
         //this is now called at the beginning of discussionforumquestion.java
 //        if(session.isLoggedIn()) {
@@ -288,13 +289,14 @@ public class DiscussionForum extends Activity implements View.OnClickListener, A
 //        else {
 //            MyToast.showLong(getApplicationContext(), "You need to be logged in to increase count");
 //        }
-
+        increaseViewCount(questionsList.get(i).getId());
         Intent intent = new Intent(getApplicationContext(), com.gmpsop.standardoperatingprocedures.Activities.DiscussionForumQuestion.class);
         intent.putExtra("question", questionsList.get(i));
         startActivity(intent);
     }
 
     public void increaseViewCount(String question_id) {
+
         String tag_string_req = "req_increase_view_count";
 
         Map<String, String> params = new HashMap<String, String>();
@@ -330,12 +332,10 @@ public class DiscussionForum extends Activity implements View.OnClickListener, A
                 error.printStackTrace();
                 //TODO: handle failure
                 Log.e(TAG, "increase viewcount Error: " + error.getMessage());
-                MyToast.showShort(getApplicationContext(),
-                        error.getMessage());
 //                    hideDialog();
             }
         });
-        if(AppController.getInstance() == null) {
+        if (AppController.getInstance() == null) {
             Log.e(TAG, "instance is null");
         }
         Log.e(TAG, jsonRequest.getBody().toString());

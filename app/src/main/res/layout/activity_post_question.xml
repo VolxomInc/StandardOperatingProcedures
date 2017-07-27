@@ -86,7 +86,10 @@
                     android:gravity="top|left"
                     android:hint="@string/post_question_detail_brief_hint"
                     android:lines="5"
+                    android:inputType="textAutoCorrect|textMultiLine|textAutoComplete|textFilter"
+                    android:autoText="true"
                     android:textAlignment="gravity"
+                    
                     android:textColor="@color/colorPrimary"
                     android:textColorHint="@color/hint_text_color"
                     android:textSize="14sp"
@@ -191,7 +194,7 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:id="@+id/post_question_SignUpButton"
+                    android:id="@+id/discussion_forum_question_SignUpButton"
                     android:layout_width="0dp"
                     android:layout_height="30dp"
                     android:layout_weight="1.4"

@@ -43,7 +43,7 @@ public class DiscussionQuestionListAdapter extends ArrayAdapter<DiscussionForumQ
         }
         init_components(view);
         DiscussionForumQuestion forumQuestion = getItem(position);
-        question.setText(forumQuestion.getQuestion());
+        question.setText(forumQuestion.getTitle());
         ans.setText(forumQuestion.getAns());
         views.setText(forumQuestion.getViews());
         return view;

@@ -20,6 +20,7 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.gmpsop.standardoperatingprocedures.Adapters.DiscussionCommentListAdapter;
 import com.gmpsop.standardoperatingprocedures.AppController;
 import com.gmpsop.standardoperatingprocedures.Helper.Constants;
+import com.gmpsop.standardoperatingprocedures.Helper.InternetOperations;
 import com.gmpsop.standardoperatingprocedures.Helper.MyToast;
 import com.gmpsop.standardoperatingprocedures.Helper.SessionManager;
 import com.gmpsop.standardoperatingprocedures.R;
@@ -35,12 +36,12 @@ import java.util.Map;
 import static android.view.View.GONE;
 import static com.gmpsop.standardoperatingprocedures.AppController.TAG;
 
-public class DiscussionForumQuestion extends Activity implements View.OnClickListener{
+public class DiscussionForumQuestion extends Activity implements View.OnClickListener {
 
-    TextView questionTextView, questionAnswerCountTextView, questionViewCountTextView,
-            questionTagsTextView, noCommentsTextView, questionDetailTextView;
+    TextView questionAnswerCountTextView, questionViewCountTextView,
+            questionTagsTextView, noCommentsTextView, questionDetailTextView, questionTitleTextView;
     EditText commentEditText;
-//    EditText searchQuestion;
+    //    EditText searchQuestion;
     RelativeLayout postComment, search;
     ListView commentsListView;
     DiscussionCommentListAdapter myAdapter;
@@ -75,17 +76,16 @@ public class DiscussionForumQuestion extends Activity implements View.OnClickLis
         logoutPost = (LinearLayout) findViewById(R.id.post_question_logoutLayout);
         loginButton = (RelativeLayout) findViewById(R.id.post_question_LoginButton);
         loginButton.setOnClickListener(this);
-        createAccountButton = (RelativeLayout) findViewById(R.id.post_question_SignUpButton);
+        createAccountButton = (RelativeLayout) findViewById(R.id.discussion_forum_question_SignUpButton);
         createAccountButton.setOnClickListener(this);
 
         noCommentsTextView = (TextView) findViewById(R.id.no_comments);
         noCommentsTextView.setVisibility(GONE);
 
-        questionTextView = (TextView) findViewById(R.id.discussion_forum_question);
-        questionTextView.setText(question.getQuestion());
-
         questionDetailTextView = (TextView) findViewById(R.id.question_detail);
         questionDetailTextView.setText(question.getQuestion());
+        questionDetailTextView = (TextView) findViewById(R.id.post_question_title);
+        questionDetailTextView.setText(question.getTitle());
 
         questionAnswerCountTextView = (TextView) findViewById(R.id.question_answer_count);
         questionAnswerCountTextView.setText(question.getAns());
@@ -111,11 +111,11 @@ public class DiscussionForumQuestion extends Activity implements View.OnClickLis
         pullSingleQuestion();
         pullComments();
 
-        myAdapter = new DiscussionCommentListAdapter(this,R.layout.list_view_discuss_forum_question_comment, commentsList);
+        myAdapter = new DiscussionCommentListAdapter(this, R.layout.list_view_discuss_forum_question_comment, commentsList);
         commentsListView.setAdapter(myAdapter);
 
         //increase view count if user is logged in
-        if(session.isLoggedIn()) {
+        if (session.isLoggedIn()) {
             new Thread(new Runnable() {
                 public void run() {
                     increaseViewCount(question.getId());
@@ -127,10 +127,10 @@ public class DiscussionForumQuestion extends Activity implements View.OnClickLis
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.discussion_forum_post_comment_button:
                 //check if logged in
-                if(session.isLoggedIn()) {
+                if (session.isLoggedIn()) {
                     //check if comment empty
                     if (commentEditText.getText().toString().trim().equals("")) {
                         MyToast.showLong(getApplicationContext(), "Comment can not be empty");
@@ -153,7 +153,7 @@ public class DiscussionForumQuestion extends Activity implements View.OnClickLis
                     MyToast.showShort(this, "You are already loggedIn");
                 }
                 break;
-            case R.id.post_question_SignUpButton:
+            case R.id.discussion_forum_question_SignUpButton:
                 Intent signUpIntent = new Intent(this,
                         SignUpMembers.class);
                 startActivity(signUpIntent);
@@ -178,16 +178,31 @@ public class DiscussionForumQuestion extends Activity implements View.OnClickLis
                 try {
                     int error = response.getInt(Constants.DOCUMENT_RESPONSE_MSG);
                     if (error == 0) {
-                        MyToast.showLong(getApplicationContext(), "comments pulled successfully");
                         Log.d(TAG, "comments response: " + response.getJSONArray(Constants.DOCUMENT_RESPONSE_DATA));
 
                         //add values to adapter
                         JSONArray list = response.getJSONArray(Constants.DOCUMENT_RESPONSE_DATA);
+
+                        String comment;
+                        int question1d;
+                        String commented_by;
+                        long commented_time;
+
                         for (int i = 0; i < list.length(); i++) {
+
+                            comment = list.getJSONObject(i).getString(Constants.PARAMETER_COMMENT);
+                            question1d = Integer.parseInt(list.getJSONObject(i).getString(Constants.PARAMETER_QUESTION_ID));
+                            commented_by = list.getJSONObject(i).getString(Constants.PARAMETER_COMMENTED_NAME);
+                            if (!list.getJSONObject(i).getString(Constants.PARAMETER_COMMENTED_TIME).equals("")) {
+                                commented_time = Long.parseLong(list.getJSONObject(i).getString(Constants.PARAMETER_COMMENTED_TIME));
+                            }else{
+                                commented_time = 0;
+                            }
                             commentsList.add(new com.gmpsop.standardoperatingprocedures.Models.DiscussionForumQuestionComment(
-                                    list.getJSONObject(i).getString(Constants.PARAMETER_COMMENT),
-                                    list.getJSONObject(i).getString(Constants.PARAMETER_QUESTION_ID) ,
-                                    list.getJSONObject(i).getString(Constants.PARAMETER_COMMENTED_BY))
+                                    comment,
+                                    String.valueOf(question1d),
+                                    commented_by,
+                                    commented_time)
                             );
                         }
 
@@ -217,13 +232,17 @@ public class DiscussionForumQuestion extends Activity implements View.OnClickLis
                 Log.e(TAG, "pulling comments Error: " + error.getMessage());
 //                MyToast.showShort(getApplicationContext(),
 //                        error.getMessage());
-                    pDialog.dismiss();
+                pDialog.dismiss();
             }
         });
         AppController.getInstance().addToRequestQueue(jsonRequest, tag_string_req);
     }
 
     public void pullSingleQuestion() {
+        if (!InternetOperations.isNetworkConnected(this)) {
+            MyToast.showLong(this, getString(R.string.noInternetConnection));
+            return;
+        }
         String tag_string_req = "req_single_question";
 
         Map<String, String> params = new HashMap<String, String>();
@@ -291,16 +310,20 @@ public class DiscussionForumQuestion extends Activity implements View.OnClickLis
     }
 
 
-
     public void postComment() {
+        if (!InternetOperations.isNetworkConnected(this)) {
+            MyToast.showLong(this, getString(R.string.noInternetConnection));
+            return;
+        }
         String tag_string_req = "req_post_comment";
 
         Map<String, String> params = new HashMap<String, String>();
         params.put(Constants.PARAMETER_QUESTION_ID, question.getId());
         params.put(Constants.PARAMETER_COMMENT, commentEditText.getText().toString());
         params.put(Constants.PARAMETER_COMMENTED_BY, session.getUserDetail().getEmail());
+        params.put(Constants.PARAMETER_COMMENTED_NAME, session.getUserDetail().getFullName());
         Log.e(TAG, "post comment: " + question.getId() + ", " + commentEditText.getText().toString() + ", "
-        + session.getUserDetail().getEmail());
+                + session.getUserDetail().getEmail());
 
         JSONObject parameters = new JSONObject(params);
 
@@ -317,9 +340,7 @@ public class DiscussionForumQuestion extends Activity implements View.OnClickLis
                     if (error == 0) {
 //                        MyToast.showLong(getApplicationContext(), "post comment successfully");
 //                        Log.d(TAG, "post comment response: " + response.getJSONArray(Constants.DOCUMENT_RESPONSE_DATA));
-
                         insertNotification();
-
                         //refresh activity
                         startActivity(getIntent());
                         finish();
@@ -340,8 +361,6 @@ public class DiscussionForumQuestion extends Activity implements View.OnClickLis
                 error.printStackTrace();
                 //TODO: handle failure
                 Log.e(TAG, "post comment Error: " + error.getMessage());
-                MyToast.showShort(getApplicationContext(),
-                        error.getMessage());
 //                    hideDialog();
             }
         });
@@ -364,15 +383,16 @@ public class DiscussionForumQuestion extends Activity implements View.OnClickLis
     }
 
     public void insertNotification() {
+        if (!InternetOperations.isNetworkConnected(this)) {
+            MyToast.showLong(this, getString(R.string.noInternetConnection));
+            return;
+        }
         String tag_string_req = "req_insert_notification";
 
 //        1- notification_text 2- email 3- notification_date 4- status
         Map<String, String> params = new HashMap<String, String>();
-        params.put(Constants.PARAMETER_NOTIFICATION_TEXT, "You have successfully commented on a question in Community Forum.");
-        params.put(Constants.PARAMETER_EMAIL, session.getUserDetail().getEmail());
-        long unixTime = System.currentTimeMillis() / 1000L;
-        params.put(Constants.PARAMETER_NOTIFICATION_DATE, String.valueOf(unixTime));
-        params.put(Constants.PARAMETER_STATUS, String.valueOf(0));
+        params.put(Constants.PARAMETER_NOTIFICATION_TEXT, session.getUserDetail().getUserName() + " has commented on a question in Community Forum.");
+        params.put(Constants.PARAMETER_EMAIL, question.getQuestionBy());
 
         JSONObject parameters = new JSONObject(params);
 
@@ -409,6 +429,7 @@ public class DiscussionForumQuestion extends Activity implements View.OnClickLis
     }
 
     public void increaseViewCount(String question_id) {
+
         String tag_string_req = "req_increase_view_count";
 
         Map<String, String> params = new HashMap<String, String>();
@@ -444,12 +465,10 @@ public class DiscussionForumQuestion extends Activity implements View.OnClickLis
                 error.printStackTrace();
                 //TODO: handle failure
                 Log.e(TAG, "increase viewcount Error: " + error.getMessage());
-                MyToast.showShort(getApplicationContext(),
-                        error.getMessage());
 //                    hideDialog();
             }
         });
-        if(AppController.getInstance() == null) {
+        if (AppController.getInstance() == null) {
             Log.e(TAG, "instance is null");
         }
         Log.e(TAG, jsonRequest.getBody().toString());

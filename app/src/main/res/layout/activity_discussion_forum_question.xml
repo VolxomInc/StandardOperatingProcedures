@@ -10,124 +10,125 @@
     android:orientation="vertical"
     tools:context="com.gmpsop.standardoperatingprocedures.Activities.DiscussionForum">
 
-
     <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextViewBold
-        android:layout_width="match_parent"
+        android:id="@+id/post_question_title"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/discussion_forum_question"
-        android:layout_gravity="start"
-        android:layout_marginBottom="5dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
-        android:text="@string/discussion_forum_question"
-        android:textAlignment="textStart"
-        android:textColor="@color/sloganColorBlack"
-        android:textSize="20sp" />
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="question detail"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
 
     <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView
         android:id="@+id/question_detail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:text="question detail"
         android:textColor="@color/colorPrimary"
         android:textSize="16sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:orientation="horizontal"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:gravity="center_vertical"
+        android:orientation="horizontal"
         android:weightSum="1.5">
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight=".4"
+            android:layout_marginRight="2dp"
+            android:layout_weight=".25"
             android:orientation="horizontal"
-            android:weightSum="1"
-            android:layout_marginRight="10dp">
+            android:weightSum="1">
+
             <ImageView
-                android:layout_margin="2dp"
-                android:layout_weight=".2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight=".3"
                 android:adjustViewBounds="true"
-                android:src="@drawable/discuss_forum_comment"/>
+                android:src="@drawable/discuss_forum_comment" />
 
             <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView
-                android:layout_margin="2dp"
                 android:id="@+id/question_answer_count"
-                android:layout_weight=".8"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight=".7"
                 android:singleLine="true"
-                android:text="2 Answers"
+                android:text="2"
                 android:textColor="@color/colorPrimary"
-                android:textSize="12sp"/>
+                android:textSize="12sp" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight=".4"
+            android:layout_marginRight="2dp"
+            android:layout_weight=".25"
             android:orientation="horizontal"
-            android:weightSum="1"
-            android:layout_marginLeft="10dp">
+            android:weightSum="1">
+
             <ImageView
-                android:layout_margin="2dp"
-                android:layout_weight=".2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight=".3"
                 android:adjustViewBounds="true"
-                android:src="@drawable/discuss_forum_eye"/>
+                android:src="@drawable/discuss_forum_eye" />
 
             <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView
-                android:layout_margin="2dp"
                 android:id="@+id/question_view_count"
-                android:layout_weight=".8"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight=".7"
                 android:singleLine="true"
-                android:text="2 Views"
+                android:text="2"
                 android:textColor="@color/colorPrimary"
-                android:textSize="12sp"/>
+                android:textSize="12sp" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
             android:layout_weight=".8"
             android:orientation="horizontal"
-            android:weightSum="1"
-            android:layout_marginRight="10dp">
+            android:weightSum="1">
+
             <ImageView
-                android:layout_margin="2dp"
-                android:layout_weight=".2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight=".2"
                 android:adjustViewBounds="true"
-                android:src="@drawable/discuss_forum_comment"/>
+                android:src="@drawable/discuss_forum_comment" />
 
             <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView
-                android:layout_margin="2dp"
                 android:id="@+id/discussion_forum_question_tags"
-                android:layout_weight=".9"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_weight=".8"
                 android:singleLine="true"
                 android:text="tags"
                 android:textColor="@color/colorPrimary"
-                android:textSize="12sp"/>
+                android:textSize="12sp" />
 
         </LinearLayout>
 
     </LinearLayout>
-
 
 
     <com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView
@@ -142,12 +143,12 @@
         android:id="@+id/no_comments"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:visibility="gone"
         android:layout_gravity="start"
-        android:text="@string/discussion_forum_no_comments"
         android:layout_margin="10dp"
+        android:text="@string/discussion_forum_no_comments"
         android:textColor="@android:color/black"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:visibility="gone" />
 
     <ListView
         android:id="@+id/discussion_forum_questions_list"
@@ -167,25 +168,25 @@
         android:weightSum="10">
 
         <!--<RelativeLayout-->
-            <!--android:id="@+id/discussion_forum_search_button"-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_weight="10"-->
-            <!--android:background="@drawable/shape_rectangle_button_background2"-->
-            <!--android:gravity="center">-->
+        <!--android:id="@+id/discussion_forum_search_button"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="10"-->
+        <!--android:background="@drawable/shape_rectangle_button_background2"-->
+        <!--android:gravity="center">-->
 
-            <!--<com.gmpsop.standardoperatingprocedures.CustomViews.MyEditText-->
-                <!--android:id="@+id/discussion_forum_comment"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:minLines="3"-->
-                <!--android:hint="@string/discussion_forum_comment_hint"-->
-                <!--android:textAlignment="textStart"-->
-                <!--android:gravity="start"-->
-                <!--android:textColor="@color/colorPrimary"-->
-                <!--android:textSize="16sp" />-->
+        <!--<com.gmpsop.standardoperatingprocedures.CustomViews.MyEditText-->
+        <!--android:id="@+id/discussion_forum_comment"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:minLines="3"-->
+        <!--android:hint="@string/discussion_forum_comment_hint"-->
+        <!--android:textAlignment="textStart"-->
+        <!--android:gravity="start"-->
+        <!--android:textColor="@color/colorPrimary"-->
+        <!--android:textSize="16sp" />-->
 
-<!--</RelativeLayout>-->
+        <!--</RelativeLayout>-->
 
         <LinearLayout
             android:id="@+id/post_question_detailLayout"
@@ -256,7 +257,7 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/post_question_SignUpButton"
+            android:id="@+id/discussion_forum_question_SignUpButton"
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:layout_weight="1.4"
@@ -320,32 +321,32 @@
     </LinearLayout>
 
     <!--<LinearLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="30dp"-->
-        <!--android:layout_margin="5dp"-->
-        <!--android:gravity="end"-->
-        <!--android:orientation="horizontal"-->
-        <!--android:weightSum="10">-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_margin="5dp"-->
+    <!--android:gravity="end"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:weightSum="10">-->
 
-        <!--<RelativeLayout-->
-            <!--android:id="@+id/discussion_forum_post_comment_button"-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="30dp"-->
-            <!--android:layout_weight="3.4"-->
-            <!--android:background="@drawable/shape_rectangle_button"-->
-            <!--android:gravity="center">-->
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/discussion_forum_post_comment_button"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_weight="3.4"-->
+    <!--android:background="@drawable/shape_rectangle_button"-->
+    <!--android:gravity="center">-->
 
-            <!--<com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView-->
+    <!--<com.gmpsop.standardoperatingprocedures.CustomViews.MyTextView-->
 
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:singleLine="true"-->
-                <!--android:text="@string/submit"-->
-                <!--android:textAlignment="center"-->
-                <!--android:textColor="@color/white"-->
-                <!--android:textSize="16sp" />-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:singleLine="true"-->
+    <!--android:text="@string/submit"-->
+    <!--android:textAlignment="center"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="16sp" />-->
 
-        <!--</RelativeLayout>-->
+    <!--</RelativeLayout>-->
 
     <!--</LinearLayout>-->
 

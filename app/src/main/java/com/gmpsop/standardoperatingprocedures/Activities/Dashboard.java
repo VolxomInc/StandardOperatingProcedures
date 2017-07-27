@@ -24,6 +24,7 @@ import com.gmpsop.standardoperatingprocedures.Helper.InternetOperations;
 import com.gmpsop.standardoperatingprocedures.Helper.MyToast;
 import com.gmpsop.standardoperatingprocedures.Helper.SessionManager;
 import com.gmpsop.standardoperatingprocedures.R;
+import com.gmpsop.standardoperatingprocedures.Services.NotificationChecking;
 import com.gmpsop.standardoperatingprocedures.util.IabHelper;
 import com.gmpsop.standardoperatingprocedures.util.IabResult;
 import com.gmpsop.standardoperatingprocedures.util.Inventory;
@@ -57,7 +58,6 @@ public class Dashboard extends Activity implements View.OnClickListener {
 
     ArrayList<String> logoutResponse = new ArrayList<>();
     ArrayList<String> subscriptionResponse = new ArrayList<>();
-
     LinearLayout notification, searchGMPTerm, gMPDiscussForum, sampleDocument, buyFromGMPSOPLibrary, overView, fAQs, aboutUs, contactUs, loginSignUp, logout;
     RelativeLayout logInButton, signUpButton, logoutButton;
 
@@ -141,7 +141,7 @@ public class Dashboard extends Activity implements View.OnClickListener {
             public void onIabPurchaseFinished(IabResult result,
                                               Purchase purchase) {
                 if (result.isFailure()) {
-
+                    Log.d(TAG, "failed billing");
                 } else {
                     setSubscription(session.getUserDetail().getEmail());
                 }
@@ -190,6 +190,7 @@ public class Dashboard extends Activity implements View.OnClickListener {
 
             //check subscription from server and set it in sharedprefs
             checkUserSubscription(session.getUserDetail().getEmail());
+            startService(new Intent(this, NotificationChecking.class).putExtra(Constants.EMAIL, session.getUserDetail().getEmail()));
 
         } else {
             logout.setVisibility(View.GONE);
@@ -270,32 +271,54 @@ public class Dashboard extends Activity implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        if (!InternetOperations.isNetworkConnected(this)) {
-            MyToast.showLong(this, getString(R.string.noInternetConnection));
-            return;
-        }
+
         switch (v.getId()) {
             case R.id.dashboardLinearButton_notification:
 //                startActivity(new Intent(this , AskGMP.class));
 //                MyToast.showShort(this, "Notification Clicked");
+                if (!InternetOperations.isNetworkConnected(this)) {
+                    MyToast.showLong(this, getString(R.string.noInternetConnection));
+                    break;
+                }
+
+                if(!session.isLoggedIn()){
+                    MyToast.showShort(this, "Please Login to View notifications");
+                    break;
+                }
+
                 startActivity(new Intent(this , Notifications.class));
                 break;
             case R.id.dashboardLinearButton_searchGmpTerm:
+                if (!InternetOperations.isNetworkConnected(this)) {
+                    MyToast.showLong(this, getString(R.string.noInternetConnection));
+                    break;
+                }
                 startActivity(new Intent(this , SearchOption.class));
                 break;
             case R.id.dashboardLinearButton_gmpDiscussionForum:
-
+                if (!InternetOperations.isNetworkConnected(this)) {
+                    MyToast.showLong(this, getString(R.string.noInternetConnection));
+                    break;
+                }
                 startActivity(new Intent(this , DiscussionForum.class));
                 break;
             case R.id.dashboardLinearButton_sampleDocument:
                 // MyToast.showShort(this, "DocumentFiles Clicked");
                 // User is already logged in. Take him to main activity
+                if (!InternetOperations.isNetworkConnected(this)) {
+                    MyToast.showLong(this, getString(R.string.noInternetConnection));
+                    break;
+                }
                 Intent intent = new Intent(this,
                         DocumentFiles.class);
                 intent.putExtra(Constants.INTENT_ROOT_TYPE, Constants.SAMPLE_DOC);
                 startActivity(intent);
                 break;
             case R.id.dashboardLinearButton_buyFromSopLibrary:
+                if (!InternetOperations.isNetworkConnected(this)) {
+                    MyToast.showLong(this, getString(R.string.noInternetConnection));
+                    break;
+                }
                 if (!session.isLoggedIn()) {
                     loginDialog.show();
                 } else {
@@ -328,6 +351,10 @@ public class Dashboard extends Activity implements View.OnClickListener {
                 startActivity(contactIntent);
                 break;
             case R.id.dashboardLoginButton:
+                if (!InternetOperations.isNetworkConnected(this)) {
+                    MyToast.showLong(this, getString(R.string.noInternetConnection));
+                    break;
+                }
                 if (!session.isLoggedIn()) {
                     Intent loginIntent = new Intent(this,
                             Login.class);
@@ -339,11 +366,19 @@ public class Dashboard extends Activity implements View.OnClickListener {
                 }
                 break;
             case R.id.dashboardSignUpButton:
+                if (!InternetOperations.isNetworkConnected(this)) {
+                    MyToast.showLong(this, getString(R.string.noInternetConnection));
+                    break;
+                }
                 Intent signUpIntent = new Intent(this,
                         SignUpMembers.class);
                 startActivity(signUpIntent);
                 break;
             case R.id.dashboardLogoutButton:
+                if (!InternetOperations.isNetworkConnected(this)) {
+                    MyToast.showLong(this, getString(R.string.noInternetConnection));
+                    break;
+                }
                 //logoutSession();
                 logOutUser(session.getUserDetail().getEmail());
                 break;

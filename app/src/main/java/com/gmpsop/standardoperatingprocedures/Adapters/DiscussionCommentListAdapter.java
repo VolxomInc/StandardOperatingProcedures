@@ -14,6 +14,8 @@ import android.widget.TextView;
 import com.gmpsop.standardoperatingprocedures.Models.DiscussionForumQuestionComment;
 import com.gmpsop.standardoperatingprocedures.R;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -23,8 +25,9 @@ import java.util.List;
 public class DiscussionCommentListAdapter extends ArrayAdapter<DiscussionForumQuestionComment> {
 
     Context context;
-    TextView comment, commented_by, views;
+    TextView comment, commented_by, commented_date;
     ImageView forwardButton;
+    DiscussionForumQuestionComment forumQuestionComment;
 
 
     public DiscussionCommentListAdapter(@NonNull Context context, @LayoutRes int resource, @NonNull List<DiscussionForumQuestionComment> objects) {
@@ -42,9 +45,16 @@ public class DiscussionCommentListAdapter extends ArrayAdapter<DiscussionForumQu
                     R.layout.list_view_discuss_forum_question_comment, parent, false);
         }
         init_components(view);
-        DiscussionForumQuestionComment forumQuestionComment = getItem(position);
+
+        forumQuestionComment = getItem(position);
         comment.setText(forumQuestionComment.getComment());
         commented_by.setText(forumQuestionComment.getCommentedBy());
+        if (forumQuestionComment.getCommentTime() != 0) {
+            Date dateObject = new Date(forumQuestionComment.getCommentTime() * 1000);
+            commented_date.setText(formatDate(dateObject));
+        }else{
+            commented_date.setText("");
+        }
 //        views.setText(forumQuestionComment.getViews());
         return view;
     }
@@ -52,6 +62,19 @@ public class DiscussionCommentListAdapter extends ArrayAdapter<DiscussionForumQu
     public void init_components(View view) {
         comment = (TextView) view.findViewById(R.id.listViewDiscussionQuestionCommentText);
         commented_by = (TextView) view.findViewById(R.id.listViewDiscussionQuestionCommentBy);
-        views = (TextView) view.findViewById(R.id.listViewDiscussionQuestionNoViews);
+        commented_date = (TextView) view.findViewById(R.id.listViewDiscussionQuestionCommentDate);
+    }
+
+    private String formatDate(Date dateObject) {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("LLL dd, yyyy");
+        return dateFormat.format(dateObject);
+    }
+
+    /**
+     * Return the formatted date string (i.e. "4:30 PM") from a Date object.
+     */
+    private String formatTime(Date dateObject) {
+        SimpleDateFormat timeFormat = new SimpleDateFormat("h:mm a");
+        return timeFormat.format(dateObject);
     }
 }
