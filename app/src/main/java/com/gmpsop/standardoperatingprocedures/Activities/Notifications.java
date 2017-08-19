@@ -93,7 +93,7 @@ public class Notifications extends Activity implements View.OnClickListener {
         loginCreateAcc = (LinearLayout) findViewById(R.id.post_question_loginSignUpLayout);
         loginButton = (RelativeLayout) findViewById(R.id.post_question_LoginButton);
         loginButton.setOnClickListener(this);
-        createAccountButton = (RelativeLayout) findViewById(R.id.discussion_forum_question_SignUpButton);
+        createAccountButton = (RelativeLayout) findViewById(R.id.post_question_SignUpButton);
         createAccountButton.setOnClickListener(this);
         noNotificationsTextView = (TextView) findViewById(R.id.no_notifications);
         noNotificationsTextView.setVisibility(GONE);
@@ -123,7 +123,7 @@ public class Notifications extends Activity implements View.OnClickListener {
                     MyToast.showShort(this, "You are already loggedIn");
                 }
                 break;
-            case R.id.discussion_forum_question_SignUpButton:
+            case R.id.post_question_SignUpButton:
                 Intent signUpIntent = new Intent(this,
                         SignUpMembers.class);
                 startActivity(signUpIntent);

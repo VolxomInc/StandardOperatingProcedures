@@ -51,7 +51,7 @@ public class PostQuestion extends Activity implements View.OnClickListener {
     TagsEditText questionTags;
 
     private ProgressDialog pDialog;
-    ListView termTags ;
+    ListView termTags;
     GMPSuggestionsListAdapter TagsListAdapter;
     ArrayList<String> tags = new ArrayList<>();
 
@@ -91,8 +91,8 @@ public class PostQuestion extends Activity implements View.OnClickListener {
         logoutPost = (LinearLayout) findViewById(R.id.post_question_logoutLayout);
         loginButton = (RelativeLayout) findViewById(R.id.post_question_LoginButton);
         loginButton.setOnClickListener(this);
-        createAccountButton = (RelativeLayout) findViewById(R.id.discussion_forum_question_SignUpButton);
-        loginButton.setOnClickListener(this);
+        createAccountButton = (RelativeLayout) findViewById(R.id.post_question_SignUpButton);
+        createAccountButton.setOnClickListener(this);
         postButton = (RelativeLayout) findViewById(R.id.post_question_button);
         postButton.setOnClickListener(this);
         questionTitle = (EditText) findViewById(R.id.post_question_title);
@@ -131,7 +131,7 @@ public class PostQuestion extends Activity implements View.OnClickListener {
         pDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         pDialog.setMessage("Please wait while Posting...");
         pDialog.setCancelable(false);
-        
+
         termTags = (ListView) findViewById(R.id.post_question_termTags);
         TagsListAdapter = new GMPSuggestionsListAdapter(this, R.layout.list_view_search_gmp_suggestions, tags);
     }
@@ -147,8 +147,8 @@ public class PostQuestion extends Activity implements View.OnClickListener {
         }
         pDialog.show();
         if (questionTags.getText().toString().isEmpty()) {
-            postQuestion(questionTitle.getText().toString(), questionDetail.getText().toString(),"", session.getUserDetail().getEmail());
-        }else{
+            postQuestion(questionTitle.getText().toString(), questionDetail.getText().toString(), "", session.getUserDetail().getEmail());
+        } else {
             postQuestion(questionTitle.getText().toString(), questionDetail.getText().toString(), TextUtils.substring(string_format(questionTags.getTags()), 1, string_format(questionTags.getTags()).length()), session.getUserDetail().getEmail());
 
         }
@@ -290,7 +290,7 @@ public class PostQuestion extends Activity implements View.OnClickListener {
                     MyToast.showShort(this, "You are already loggedIn");
                 }
                 break;
-            case R.id.discussion_forum_question_SignUpButton:
+            case R.id.post_question_SignUpButton:
                 Intent signUpIntent = new Intent(this,
                         SignUpMembers.class);
                 startActivity(signUpIntent);

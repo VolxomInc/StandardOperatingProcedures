@@ -105,6 +105,7 @@ public class DiscussionForum extends Activity implements View.OnClickListener, A
         switch (v.getId()) {
             case R.id.discussion_forum_post_question_button:
                 startActivity(new Intent(this, PostQuestion.class));
+                finish();
                 break;
             case R.id.discussion_forum_search_button:
 //                MyToast.showShort(this, "Search Clicked");
@@ -142,7 +143,7 @@ public class DiscussionForum extends Activity implements View.OnClickListener, A
         Map<String, String> params = new HashMap<String, String>();
         JSONObject parameters = new JSONObject(params);
 
-        JsonObjectRequest jsonRequest = new JsonObjectRequest(Request.Method.GET, Constants.FORUM_QUESTIONS, parameters, new Response.Listener<JSONObject>() {
+        JsonObjectRequest jsonRequest = new JsonObjectRequest(Request.Method.POST, Constants.FORUM_QUESTIONS, parameters, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
                 //TODO: handle success
@@ -169,7 +170,7 @@ public class DiscussionForum extends Activity implements View.OnClickListener, A
                                     list.getJSONObject(i).getString(Constants.PARAMETER_QUESTION_TAG))
                             );
                         }
-
+                        tempQuestionsList.clear();
                         tempQuestionsList.addAll(questionsList);
 
 //                        myAdapter.notifyDataSetChanged();

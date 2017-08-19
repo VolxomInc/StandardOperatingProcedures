@@ -104,7 +104,7 @@ public class SignUpMembers extends Activity implements View.OnClickListener {
                 startActivity(termIntent);
                 break;
             case R.id.signUpPrivacyPolicy:
-                MyToast.showShort(this, "PrivacyPolicy Clicked");
+//                MyToast.showShort(this, "PrivacyPolicy Clicked");
                 break;
         }
     }

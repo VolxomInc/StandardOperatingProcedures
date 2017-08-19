@@ -77,7 +77,7 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/discussion_forum_question_SignUpButton"
+            android:id="@+id/post_question_SignUpButton"
             android:layout_width="0dp"
             android:layout_height="30dp"
             android:layout_weight="1.4"

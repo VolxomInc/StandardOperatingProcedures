@@ -5,9 +5,9 @@ android {
     buildToolsVersion "25.0.2"
     defaultConfig {
         applicationId "com.gmpsop.standardoperatingprocedures"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 25
-        versionCode 13
+        versionCode 19
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }

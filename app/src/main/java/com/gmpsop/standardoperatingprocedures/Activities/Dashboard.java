@@ -93,10 +93,11 @@ public class Dashboard extends Activity implements View.OnClickListener {
                 try {
                     int resMsg = response.getInt(Constants.DOCUMENT_RESPONSE_MSG);
                     if (resMsg == 0) {
+                        session.setSubsription(1);
                         MyToast.showLong(getApplicationContext(), subscriptionResponse.get(resMsg));
                         // Launch login activity
                         //logoutSession();
-                        session.setSubsription(1);
+
                     } else {
                         MyToast.showLong(getApplicationContext(),
                                 subscriptionResponse.get(resMsg));
